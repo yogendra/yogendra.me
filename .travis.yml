@@ -4,10 +4,6 @@ language: ruby
 services:
   - docker
 
-addons:
-  ssh_known_hosts: $DEPLOY_HOST
-
-
 install:
 - docker pull yogendra/hugo:latest
 
@@ -19,6 +15,7 @@ before_deploy:
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/deploy_rsa
 - ssh-add /tmp/deploy_rsa
+- ssh-keyscan -p $DEPLOY_PORT $DEPLOY_HOST >> ~/.ssh/known_hosts
 
 
 deploy:
