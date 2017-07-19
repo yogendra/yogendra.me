@@ -1,4 +1,4 @@
-baseURL = "https://yogendra.me/"
+baseURL = "http://yogendra.me/"
 languageCode = "en-us"
 title = "this = &yogi;"
 theme = "minimal"
