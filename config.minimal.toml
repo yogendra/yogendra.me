@@ -23,7 +23,7 @@ ignoreFiles = ["^\\.gitkeep$"]
     weight = 1
 
 [[menu.main]]
-    url = "/posts/"
+    url = "/post/"
     name = "Posts"
     weight = 2
 
