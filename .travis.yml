@@ -12,7 +12,7 @@ install:
 - docker pull yogendra/hugo:latest
 
 script:
-- . .env && site-build-docker
+- $TRAVIS_BUILD_DIR/.env site-build-docker
 
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_25678052b481_key -iv $encrypted_25678052b481_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
@@ -23,7 +23,7 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: . .env && site-deploy $DEPLOY_USER $DEPLOY_HOST $DEPLOY_PATH $DEPLOY_PORT
+  script: $TRAVIS_BUILD_DIR/.env site-deploy $DEPLOY_USER $DEPLOY_HOST $DEPLOY_PATH $DEPLOY_PORT
   on:
     branch: master
 
