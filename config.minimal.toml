@@ -2,6 +2,7 @@ baseURL = "http://example.com/"
 languageCode = "en-us"
 title = "this = &yogi;"
 theme = "minimal"
+ignoreFiles = ["^\\.gitkeep$"]
 
 [params]
     author = "Yogendra Rampuria (Yogi)"
@@ -13,7 +14,8 @@ theme = "minimal"
     font = "Quicksand" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-dark"
-    highlightLanguages = [ "asciidoc", "apache", "bash", "c", "c++", "coffee", "css", "dockerfile", "go", "html", "http", "java", "javascript", "json", "kotlin", "less", "makefile", "markdown", "nginx", "perl", "php",  "python", "ruby", "scala", "scss", "shell-session", "sql",  "swift", "yaml",  "xml"]
+#   highlightLanguages = [ "asciidoc", "apache", "bash", "c", "c++", "coffee", "css", "dockerfile", "go", "html", "http", "java", "javascript", "json", "kotlin", "less", "makefile", "markdown", "nginx", "perl", "php",  "python", "ruby", "scala", "scss", "shell-session", "sql",  "swift", "yaml",  "xml"]
+    highlightLanguages = [ "bash" ]
 
 [[menu.main]]
     url = "/"
