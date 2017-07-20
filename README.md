@@ -1,5 +1,7 @@
 # Yogendra.Me - Web Site
 
+[![Build Status](https://travis-ci.org/yogendra/yogendra.me.svg?branch=master)](https://travis-ci.org/yogendra/yogendra.me)
+
 This is my personal website. I am using a simple static site generator to 
 maintain it. 
 
