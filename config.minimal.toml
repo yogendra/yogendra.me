@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "this = &yogi;"
 theme = "minimal"
 ignoreFiles = ["^\\.gitkeep$"]
+googleAnalytics="UA-21164716-2"
 
 [params]
     author = "Yogendra Rampuria (Yogi)"
@@ -14,8 +15,8 @@ ignoreFiles = ["^\\.gitkeep$"]
     font = "Quicksand" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-dark"
-#   highlightLanguages = [ "asciidoc", "apache", "bash", "c", "c++", "coffee", "css", "dockerfile", "go", "html", "http", "java", "javascript", "json", "kotlin", "less", "makefile", "markdown", "nginx", "perl", "php",  "python", "ruby", "scala", "scss", "shell-session", "sql",  "swift", "yaml",  "xml"]
     highlightLanguages = [ "bash" ]
+
 
 [[menu.main]]
     url = "/"
