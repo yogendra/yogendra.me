@@ -21,7 +21,7 @@ You need to have [hugo](https://gohugo.io/) and a text editor installed.
 git clone git@github.com:yogendra/yogendra.me.git
 cd yogendra.me
 git submodule update --init --recursive
-hugo server
+hugo server -s site -wDEF -b http://localhost:1313 --navigateToChanged --cleanDestinationDir -d dev
 ```
 
 Navigate to http://localhost:1313
