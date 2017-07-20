@@ -1,9 +1,19 @@
 ---
 title: "Migration Mania"
 date: 2017-07-20T22:13:49+08:00
-tags: ["web", "blog", "cd/ci", "git",]
 draft: false
-highlightLanguages: ["bash", "yaml"]
+categories:
+  - DevOps
+  - Technology
+tags:
+  - "web"
+  - "blog"
+  - "cd/ci"
+  - "git"
+highlightLanguages: 
+  - "bash"
+  - "yaml"
+
 ---
 # Migrating to Static Site Generator
 
