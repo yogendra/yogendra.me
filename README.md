@@ -20,6 +20,7 @@ You need to have [hugo](https://gohugo.io/) and a text editor installed.
 ```shell
 git clone git@github.com:yogendra/yogendra.me.git
 cd yogendra.me
+git submodule update --init --recursive
 hugo server
 ```
 
