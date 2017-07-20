@@ -49,8 +49,8 @@ git submodule update --init --recursive
 
 Here are some changes that you should consider:
 
-* You should probably delete `content/*` (or not). 
-* You **should** change information in `config.minimal.toml`, consider changing:
+* You should probably delete `site/content/*` and  `site/static/*`  (or not). 
+* You **should** change information in `config.toml`, consider changing:
   * googleAnalytics
   * baseUrl
   * title
@@ -64,18 +64,16 @@ Here are some changes that you should consider:
 You can run development server using following command
 
 ```bash
-hugo server --config config.minimal.toml -wDEF -b http://localhost:1313 -p 1313 --navigateToChanged --cleanDestinationDir -d dev
+hugo server -s site -wDEF -b http://localhost:1313 --navigateToChanged --cleanDestinationDir -d dev
 ```
 
 What the hell! Read instruction in  `hugo server --help` to understand what each of those switches mean. We are asking hugo to:
 
-* --config : use `config.minimal.toml` config
 * -w : watch for changes
 * -D : build draft
 * -E : build expired pages
 * -F : build future date page, 
 * -b : set base url to `http://localhost:1313`
-* -p : bind to port `1313`
 * --navigateToChanged : navigate browser to updated file
 * --cleanDestinationDir: Delete all the files that might be there in destination dir
 * -d : Destination dir to store files into
@@ -83,13 +81,14 @@ What the hell! Read instruction in  `hugo server --help` to understand what each
 You can add your own content using command like 
 
 ```bash
+cd site
 hugo new post/<post-name.md>
 ```
 
 When you want to prepare actual deployment, you can use following command
 
 ```bash
-hugo --config config.minimal.toml -d public
+hugo -s site -d public
 ```
 
 ## Configure Firebase
@@ -150,4 +149,6 @@ deploy:
     branch: master
 ```
 
-That's it!
+That's it! Don't forget to checkin your changes.
+
+
