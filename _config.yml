@@ -12,7 +12,7 @@ timezone: Asia/Singapore
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://localhost:4000
+url: http://yogendra.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -43,7 +43,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace: '  '
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -52,7 +52,7 @@ index_generator:
   path: ''
   per_page: 5
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -75,7 +75,7 @@ thumbnails:
   masks:
     - \.jpg$
     - \.png$
-    - \.jpeg$  
+    - \.jpeg$
   profiles:
     largeThumb:
       resize:
