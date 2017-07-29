@@ -1,3 +1,5 @@
 site/public
 site/dev
 deploy_rsa
+node_modules/
+public/

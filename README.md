@@ -10,7 +10,7 @@ maintain it.
 Simple F-C-PR
 
 * You can **fork** this repository
-* Make **changes** and test
+* Make **change** and test
 * Raise **pull request**
 
 ## How to build or check changes?
