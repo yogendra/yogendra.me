@@ -11,10 +11,11 @@
     "build": "hexo generate",
     "start": "hexo server",
     "test": "echo 'no test' && exit 0",
-    "deploy": "hexo deploy"
+    "post-deploy": "hexo algolia"
   },
   "dependencies": {
     "hexo": "^3.2.0",
+    "hexo-algoliasearch": "^0.2.1",
     "hexo-deployer-git": "^0.3.1",
     "hexo-filter-plantuml": "^1.0.1",
     "hexo-generator-alias": "^0.1.3",
