@@ -9,3 +9,4 @@ public/
 site/dev
 site/public
 Thumbs.db
+.env-private
