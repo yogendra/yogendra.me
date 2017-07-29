@@ -121,15 +121,3 @@ keyword:
 
 include:
   - .htaccess
-
-algolia:
-  chunkSize: 5000
-  fields:
-    - title
-    - date
-    - permalink
-    - thumbnailImageUrl
-    - tags
-    - categories
-    - excerpt
-    - excerpt:strip

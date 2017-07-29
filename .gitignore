@@ -10,3 +10,4 @@ site/dev
 site/public
 Thumbs.db
 .env-private
+_multiconfig.yml
