@@ -23,7 +23,6 @@ deploy:
   skip_cleanup: true
   script:
   - $TRAVIS_BUILD_DIR/.env site-deploy $DEPLOY_USER $DEPLOY_HOST $DEPLOY_PATH $DEPLOY_PORT
-  - yarn post-deploy
   on:
     branch: master
 

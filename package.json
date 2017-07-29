@@ -10,8 +10,7 @@
     "postinstall": "cd themes/tranquilpeak && yarn install && yarn prod",
     "build": "hexo generate",
     "start": "hexo server --config _config.yml,_config.dev.yml",
-    "test": "echo 'no test' && exit 0",
-    "post-deploy": "hexo algolia"
+    "test": "echo 'no test' && exit 0"
   },
   "dependencies": {
     "hexo": "^3.2.0",
