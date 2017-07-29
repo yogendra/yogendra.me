@@ -1,5 +1,11 @@
-site/public
-site/dev
+.deploy*/
+.DS_Store
+*.log
+db.json
 deploy_rsa
 node_modules/
 public/
+public/
+site/dev
+site/public
+Thumbs.db
