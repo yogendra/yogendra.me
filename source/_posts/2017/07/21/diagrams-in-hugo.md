@@ -10,7 +10,7 @@ tags:
 thumbnailImage: uml.png
 ---
 
-I use a text to diagram tool called [PlantUML](http://plantuml.org). Its perfect!
+I use a text to diagram tool called [PlantUML](http://plantuml.org). It's perfect!
 Now, I want to use it with my hugo site, through a short code. So, I I type a 
 code like below, I should see out like as the image.
 <!-- more -->
