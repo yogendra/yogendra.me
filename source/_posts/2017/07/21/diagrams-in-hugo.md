@@ -35,4 +35,4 @@ A <- B : Hi There!
 @enduml
 ```
 
-I guess I will have to wait for hugo to mature a bit more. I really liked the speed and simplicity of hugo. But lack of plugin support in processing really killed it.
+I guess I will have to wait for hugo to mature a bit more. I really liked the speed and simplicity of hugo. But lack of plugin support in processing really killed it!
