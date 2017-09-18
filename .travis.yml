@@ -34,6 +34,7 @@ before_deploy:
 - ssh-keyscan -p $DEPLOY_PORT $DEPLOY_HOST >> ~/.ssh/known_hosts
 - git config --global user.name "Yogendra Rampuria (TravisCI)"
 - git config --global user.email "ci@yogendra.me"
+- [[ -d .deploy_git ]] && ( cd .deploy_git; git fetch --unshallow )
 
 
 
