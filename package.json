@@ -10,7 +10,7 @@
     "postinstall": "cd themes/tranquilpeak && yarn install && yarn prod",
     "build": "yarn run build:dev",
     "start": "hexo server --config _config.yml,_config.dev.yml",
-    "clean": "heco clean"
+    "clean": "heco clean",
     "build:dev": "hexo --config _config.yml,_config.dev.yml generate",
     "build:prod:github": "hexo --config _config.yml, _config.github.yml generate ",
     "build:prod:hosting": "hexo --config _config.yml, _config.hosting.yml generate",
