@@ -34,10 +34,7 @@ before_deploy:
 - chmod 600 /tmp/deploy_rsa
 - ssh-add /tmp/deploy_rsa
 - ssh-keyscan -p $DEPLOY_PORT $DEPLOY_HOST >> ~/.ssh/known_hosts
-- git config --global user.name "Yogendra Rampuria (TravisCI)"
-- git config --global user.email "ci@yogendra.me"
-- [[ -d .deploy_git ]] && ( cd .deploy_git; git pull --rebase )
-- [[ ! -d .deploy_git ]] && ( git clone $(hexo --config _config.github.yml config deploy.repo) .deploy_git )
+- $TRAVIS_BUID_DIR/.env setup-git
 
 
 
