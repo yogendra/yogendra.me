@@ -9,6 +9,7 @@ tags:
 - blogging
 alias:
 - 2017/07/21/diagrams-in-hugo.html
+- 2017/07/21/diagrams-in-blog.html
 
 thumbnailImage: uml.png
 ---
@@ -32,8 +33,7 @@ During my (failed) research, I ran into [Hexo](https://hexo.io) and [PlantUML fi
 
 In less than 20 minutes, I managed to install hexo, create a project, migrate wordpress items and got plantuml working.
 
-
-```puml
+```plantuml
 @startuml
 A -> B : Hello
 A <- B : Hi There!
