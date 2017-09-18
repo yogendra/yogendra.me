@@ -22,9 +22,11 @@ cache:
   directories:
   - .deploy_git
 
-install: yarn install
+install:
+- yarn install
 
-script: yarn build
+script:
+- yarn build
 
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_25678052b481_key -iv $encrypted_25678052b481_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
@@ -34,13 +36,14 @@ before_deploy:
 - ssh-keyscan -p $DEPLOY_PORT $DEPLOY_HOST >> ~/.ssh/known_hosts
 - git config --global user.name "Yogendra Rampuria (TravisCI)"
 - git config --global user.email "ci@yogendra.me"
-- [[ -d .deploy_git ]] && ( cd .deploy_git; git fetch --unshallow )
+- [[ -d .deploy_git ]] && ( cd .deploy_git; git pull --rebase )
+- [[ ! -d .deploy_git ]] && ( git clone $(hexo --config _config.github.yml config deploy.repo) .deploy_git )
 
 
 
 
 deploy:
-  provider: script
+- provider: script
   skip_cleanup: true
   script:
   - yarn deploy
