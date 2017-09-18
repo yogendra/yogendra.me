@@ -1,0 +1,6 @@
+url: http://yogendra.github.io
+
+deploy:
+  type: git
+  repo: git@github.com:yogendra/yogendra.github.io.git
+  branch: master

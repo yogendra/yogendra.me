@@ -97,10 +97,6 @@ theme: tranquilpeak
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@github.com:yogendra/yogendra.github.io.git
-  branch: master
 
 feed:
     type: atom
@@ -120,4 +116,12 @@ keyword:
 - javascript
 
 include:
-  - .htaccess
+- .htaccess
+
+
+plantuml:
+  format: svg            # default is png
+  asset_path: plant_uml  # default is puml
+  svg_object: true       # use <object> Tag for svg files.
+
+
