@@ -8,8 +8,15 @@
   "scripts": {
     "hexo": "hexo --",
     "postinstall": "cd themes/tranquilpeak && yarn install && yarn prod",
-    "build": "hexo generate",
+    "build": "yarn run build:dev",
     "start": "hexo server --config _config.yml,_config.dev.yml",
+    "clean": "heco clean"
+    "build:dev": "hexo --config _config.yml,_config.dev.yml generate",
+    "build:prod:github": "hexo --config _config.yml, _config.github.yml generate ",
+    "build:prod:hosting": "hexo --config _config.yml, _config.hosting.yml generate",
+    "deploy:github": "hexo --config _config.yml,_config.github.yml deploy -g",
+    "deploy:hosting": "hexo --config _config.yml,_config.hosting.yml deploy  -g --host=${DEPLOY_HOST} --port=${DEPLOY_PORT} --user=${DEPLOY_USER} --root=${DEPLOY_PATH}",
+    "deploy": "yarn run deploy:github && yarn run deploy:hosting",
     "test": "echo 'no test' && exit 0"
   },
   "dependencies": {
