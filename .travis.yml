@@ -38,8 +38,7 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - hexo --config _config.yml,_config.hosting.yml deploy --host=$DEPLOY_HOST --user=$DEPLOY_USER --root=$DEPLOY_PATH --port=$DEPLOY_PORT
-  - hexo --config _config.yml,_config.github.yml deploy
+  - yarn deploy
   on:
     branch: master
 
