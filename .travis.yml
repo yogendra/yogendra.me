@@ -1,7 +1,21 @@
-sudo: required
-language: node_js
+dist: trusty
+sudo: false
+
+language: java
+jdk:
+  - oraclejdk8
+
 node_js:
-  - "7"
+  - "8"
+
+addons:
+  apt:
+    packages:
+    - oracle-java8-installer
+    - nodejs
+    - graphviz
+  ssh_known_hosts:
+  - $DEPLOY_HOST
 
 cache:
   yarn: true
@@ -24,8 +38,8 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - hexo hexo --config _config.yml,_config.hosting.yml deploy --host=$DEPLOY_HOST --user=$DEPLOY_USER --root=$DEPLOY_PATH --port=$DEPLOY_PORT
-  - hexo hexo --config _config.yml,_config.github.yml deploy
+  - hexo --config _config.yml,_config.hosting.yml deploy --host=$DEPLOY_HOST --user=$DEPLOY_USER --root=$DEPLOY_PATH --port=$DEPLOY_PORT
+  - hexo --config _config.yml,_config.github.yml deploy
   on:
     branch: master
 
