@@ -1,0 +1,19 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "markdown.previewFrontMatter": "show",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.deploy_git": true,
+    "**/public": true
+  },
+  "editor.wordWrap": "wordWrapColumn",
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true
+  },
+  "editor.wordWrapColumn": 160
+}
