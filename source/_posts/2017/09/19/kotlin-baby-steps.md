@@ -1,7 +1,11 @@
 ---
 title: Kotlin - Baby Steps
 date: 2017-09-19 22:49:47
+category:
+- Technology
+- Programming
 tags:
+- kotlin
 thumbnailImage: https://kotlinlang.org/assets/images/open-graph/kotlin_250x250.png
 ---
 I was a [Kotlin SG Meetup](https://www.meetup.com/kotlinsg/events/243293562/) tonight. It had a lot of content. I will post more about that later.
