@@ -8,7 +8,7 @@ tags:
 - kotlin
 thumbnailImage: https://kotlinlang.org/assets/images/open-graph/kotlin_250x250.png
 ---
-I was a [Kotlin SG Meetup](https://www.meetup.com/kotlinsg/events/243293562/) tonight. It had a lot of content. I will post more about that later.
+I was at [Kotlin SG Meetup](https://www.meetup.com/kotlinsg/events/243293562/) tonight. It had a lot of content. I will post more about that later.
 
 On my way back home (now), I started reading Kotlin website about various features ([here](https://kotlinlang.org/docs/tutorials/)).
 
