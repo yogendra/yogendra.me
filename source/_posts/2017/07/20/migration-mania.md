@@ -95,19 +95,19 @@ I recommend using [Firebase](https://firebase.google.com). Read the [hosting gui
 First, login to firebase from cli. This needs to be done only once. If you have already done this for any other prohect, you can skip this step
 
 ``` shell
-firebase login
+$ firebase login
 ```
 
 Now you need to initialize firebase setting for the project. This will run as a wizard. Follow onscreen instructions.
 
 ``` shell
-firebase init hosting
+$ firebase init hosting
 ```
 
 You may test your firebase configuration by deploying changes directly from your machine
 
 ``` shell
-firebase deploy
+$ firebase deploy
 ```
 
 **Important:** *Choose "N" for "Configure as a single-page app (rewrite all urls to /index.html)?". Also, don't overwrite files under `public/`*
@@ -119,29 +119,30 @@ firebase deploy
 Create a new project on Travis CI website  website. Login to Travis CI via `travis` command.
 
 ``` shell
-travis login
+$ travis login
 ```
 
 Get a deployment token from firebase, for using in travis ci build environment. 
 
 ``` shell
-firebase login:ci
+$ firebase login:ci
 ```
 
 This should generate a string that looks like `1/AD7sdasdasdKJA824OvEFc1c89Xz2ilBlaBlaBla`. 
 Use following command to encrypt this string and use in `.travis.yml`. 
 
 ``` shell
-travis encrypt "1/AD7sdasdasdKJA824OvEFc1c89Xz2ilBlaBlaBla" --add
+$ travis encrypt "1/AD7sdasdasdKJA824OvEFc1c89Xz2ilBlaBlaBla" --add
+SUPER-SECRET-ENCRYPTED-VALUE
 ```
 
-Replace `deploy` key in `.travis.yml` with folowing text. Remember to change `encrpted-firebase-token` with text from last command output
+Replace `deploy` key in `.travis.yml` with folowing text. Remember to change `SUPER-SECRET-ENCRYPTED-VALUE` with text from last command output
 
 ``` yaml
 deploy:
   provider: firebase
   token:
-    secure: "encrpted-firebase-token"
+    secure: "SUPER-SECRET-ENCRYPTED-VALUE"
   on:
     branch: master
 ```
