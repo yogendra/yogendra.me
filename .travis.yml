@@ -3,10 +3,10 @@ sudo: false
 
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
 
 node_js:
-  - "8"
+- "8"
 
 addons:
   apt:
@@ -34,10 +34,6 @@ before_deploy:
 - chmod 600 /tmp/deploy_rsa
 - ssh-add /tmp/deploy_rsa
 - ssh-keyscan -p $DEPLOY_PORT $DEPLOY_HOST >> ~/.ssh/known_hosts
-- $TRAVIS_BUILD_DIR/.env setup-git
-
-
-
 
 deploy:
 - provider: script
