@@ -18,15 +18,15 @@ addons:
   - $DEPLOY_HOST
 
 cache:
-  yarn: true
+  npm: true
   directories:
   - .deploy_git
 
 install:
-- yarn install
+- npm install
 
 script:
-- yarn build
+- npm build
 
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_25678052b481_key -iv $encrypted_25678052b481_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
@@ -40,8 +40,8 @@ deploy:
 - provider: script
   skip_cleanup: true
   script:
-  - yarn run deploy:hosting
-  - yarn run deploy:github
+  - npm run deploy:hosting
+  - npm run deploy:github
   on:
     branch: master
 
