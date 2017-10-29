@@ -12,6 +12,11 @@
       "type": "npm",
       "script": "deploy:github",
       "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "build:prod:github",
+      "problemMatcher": []
     }
   ]
 }

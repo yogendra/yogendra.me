@@ -316,7 +316,7 @@ Thanks to [Bharathi][27] and [Hari][28] (GDG Mangement team) for the opportunity
 [2]: https://www.nodejs.org
 [3]: https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md
 [4]: https://github.com/ChromeDevTools/devtools-protocol
-[5]:https://medium.com/@tmvvr/ecmascript-async-await-to-the-rescue-fc379ff89146
+[5]: https://medium.com/@tmvvr/ecmascript-async-await-to-the-rescue-fc379ff89146
 [6]: https://chromedevtools.github.io/devtools-protocol/
 [7]: https://www.chromium.org/Blink
 [8]: https://webkit.org
