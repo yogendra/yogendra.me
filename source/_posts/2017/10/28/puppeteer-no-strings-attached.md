@@ -12,7 +12,7 @@ thumbnailImage: logo.png
 
 {% asset_image gdg-collage.jpg %}
 
-I am a Co-Manager for [Google Developer Group - Singapore][24] ([FB][25]). And today was our annual [GDG-SG DevFest 2017][15] event. Apart from being an organizer, I also a speaker. I gave a short talk on [Puppeteer][1].  This post is (almost) a transcript of my speech today. Slides can be found [here][17]
+I am a Co-Manager for [Google Developer Group - Singapore][24] ([FB][25]). And today was our annual [GDG-SG DevFest 2017][15] event. Apart from being an organizer, I was also a speaker. I gave a short talk on [Puppeteer][1].  This post is (almost) a transcript of my speech today. Slides can be found [here][17]
 
 <!--more-->
 
