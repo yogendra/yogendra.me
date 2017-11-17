@@ -7,16 +7,16 @@
   },
   "scripts": {
     "hexo": "hexo --",
-    "postinstall": "cd themes/tranquilpeak && yarn install && yarn prod",
+    "postinstall": "cd themes/tranquilpeak && npm install && npm run prod",
     "build": "npm run build:dev",
     "start": "hexo server --config _config.yml,_config.dev.yml",
     "clean": "hexo clean",
     "build:dev": "hexo --config _config.yml,_config.dev.yml generate",
     "build:prod:github": "hexo --config _config.yml,_config.github.yml generate ",
-    "build:prod:hosting": "hexo --config _config.yml,_config.hosting.yml generate",
+    "build:prod:firebase": "hexo --config _config.yml,_config.firebase.yml generate",
     "deploy:github": "hexo --config _config.yml,_config.github.yml deploy -g --user=travisci --email=ci@yogendra.me",
-    "deploy:hosting": "hexo --config _config.yml,_config.hosting.yml deploy  -g --host=${DEPLOY_HOST} --port=${DEPLOY_PORT} --user=${DEPLOY_USER} --root=${DEPLOY_PATH}",
-    "deploy": "npm run deploy:github ; npm run deploy:hosting",
+    "deploy:firebase": "hexo --config _config.yml,_config.firebase.yml generate ; firebase deploy",
+    "deploy": "npm run deploy:github ; npm run deploy:firebase",
     "test": "echo 'no test' && exit 0"
   },
   "dependencies": {
@@ -36,5 +36,8 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "hexo-tag-fontawesome": "^1.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^3.15.2"
   }
 }

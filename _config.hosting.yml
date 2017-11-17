@@ -1,6 +1,0 @@
-url: http://yogendra.me
-
-deploy:
-  type: rsync
-  delete: true
-  verbose: true

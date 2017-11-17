@@ -1,4 +1,5 @@
 url: http://yogendra.github.io
+public_dir: .deploy_github
 
 deploy:
   type: git
