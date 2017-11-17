@@ -41,7 +41,6 @@ deploy:
   skip_cleanup: true
   script:
   - npm run deploy:hosting
-  - npm run deploy:github
   on:
     branch: master
 
