@@ -1,17 +1,8 @@
 dist: trusty
 sudo: false
-language: java
-jdk:
-- oraclejdk8
+language: node_js
 node_js:
 - '8'
-addons:
-  apt:
-    packages:
-    - oracle-java8-installer
-    - nodejs
-    - graphviz
-
 cache:
   npm: true
   directories:
@@ -20,13 +11,22 @@ cache:
 install:
 - npm install
 script:
-- npm run build:firebase
-- npm run build:github
+- npm run build:prod:github
+- npm run build:prod:firebase
 deploy:
 - provider: firebase
   token:
     secure: "D8SVPZ0FpCROKkDCXU3xkAIlfQ33eUL8HHr1I0YBpIMEH/GHn6pj4w4u0u8DJNFwMXUkXAJB+yNf8Ky5Y+whJh4tqyAZEKMHmOG4v+NHqGNLzEZ8fQ0Ppezlz0gvlnxmJxjhnSNMtvgQdRKHLxnp+S/XJccnxPij9U9V3t/TQWHc9b4WP96y+oEtk4YqWAVAut8qKFkgMVltR3HMsmkBcQ08seN7FJFKy/wvi3dQ0WMBx4aUqbowFGaHeQymCrrfH/qelbRGSu+gYUFS5IGoBD9GNFrKicV90efcou8hQPpsU/l0qq18LFeT4OXXFDSIawkEbs3RWHZn0oTts0jVO3JHYBvojRVkACtK3Z7GIILrdl/ffgJBCQnuHAHIlA2JaQmXDAnDXc6GJC+raRDfTkqKdcN2ILJOMYmU8CN5c5CJ0keyh1iZpHVLZ5jnLIDi//QGn2x+M6pJi+U7B+EqYehjpLURaDIvlt4iyg4R2Vr3E12hR4WJYFAoykQxzRQFLYJl3yZ1WzV7x0BbEBbUqiwJeIZ6SU+bSZs9JwTL2nYopaKfM868H5SQTqIJuw="
   skip_cleanup: true
+  on:
+    branch: master
+- provider: pages
+  local-dir: .deploy_github
+  repo: yognedra/yogendra.github.io
+  target-branch: master
+  keep-history: false
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
   on:
     branch: master
 notifications:
