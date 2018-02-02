@@ -25,10 +25,10 @@ deploy:
 - provider: pages
   local-dir: .deploy_github
   repo: yognedra/yogendra.github.io
-  target-branch: master
   keep-history: true
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN
+  github-token:
+    secure: "Hj1Uds1qph6GX6v0lHAulhboIXNVekmx+hdDscAsOVI11DShq/ErOsiM7RrndiMovE/3oQsQxLM+Fiymr2qvA1DHNpqCWhCUj+jXCpOyaj2p9a0V0MccfIPWwo/gJ9U8Sf++KU6hgFp/RXiGrVBGTTU0VHXNsmHoHPiRkTA/UIuJ0+UmsqMcr6lfLVeG0Ktfh4ATYoccD31VeMPilSHwTvpe7EkGpEPG1y5by3O2ec22dL9/bQb3J7qjXdjwmRN41Xh57WeZ0lT3QazPF8gLMrJUETM4CxUBWekLX9atrGQ5EqIFk9M3doLSl7LVLmWtqEGMIcNUWGAtmA4kFQIXD1KnTt/quRqRaH2PPakyLVO8+KhRj1hCIhMWZexzyyGmhyDBqq+fg/x17qqsMc3B2wuVj+cO9G/f87pKrBEySi7zO8tV/ctH3kI/kuWW933w4/tQP2LyZXJsToJOHa0CD1eO+2mPaY0dAaQ934KkLCtZuZLTocH50UspgaVDaJeIUDRNVZ4UqMPf3MJbCuahHm9Kiin11uujpJimhsBZ8p5qswByASNYCGtn0THFHjrEDfkbSF+OOaKStRqBT8LU94/uVx8TSEeKzJpHYDAnvZS/o7F5M+DHuB3vorm70wZOExOuDNPmqR8y4LLMPw8KfittrYBwXxCmaasEDFO9SM0="
   commiter-from-gh: true
   verbose: true
   on:
