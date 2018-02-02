@@ -11,7 +11,6 @@ before_install:
 - cp deploy_rsa ~/.ssh/deploy_rsa
 - chmod 400 ~/.ssh/deploy_rsa
 - echo -e "Host github.com\n\tHostName github.com\n\tUser git\n\tIdentityFile ~/.ssh/deploy_rsa\n" >> ~/.ssh/config
-- export PATH=$TRAVIS_BUILD_DIR/node_modules/.bin:$PATH
 install:
 - npm install
 script:
