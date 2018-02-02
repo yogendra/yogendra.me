@@ -7,6 +7,7 @@ cache:
   - ".deploy_git"
   - ".deploy_firebase"
   - "node_modules"
+  - "themes/tranquilpeak/node_modules"
 install:
 - npm install
 
