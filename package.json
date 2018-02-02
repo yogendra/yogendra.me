@@ -11,12 +11,14 @@
     "start": "hexo server --config _config.yml,_config.dev.yml",
     "clean": "hexo clean",
     "build-dev": "hexo --config _config.yml,_config.dev.yml generate",
+    "build-prod": "npm run build-prod-firebase; npm run build-prod-github",
     "build-prod-github": "hexo --config _config.yml,_config.github.yml generate ",
     "build-prod-firebase": "hexo --config _config.yml,_config.firebase.yml generate",
-    "deploy-prod-github": "hexo --config _config.yml,_config.github.yml deploy -g --user=travisci --email=ci@yogendra.me",
-    "deploy-prod-firebase": "hexo --config _config.yml,_config.firebase.yml generate ; firebase deploy",
-    "deploy-prod": "npm run deploy:github ; npm run deploy:firebase",
-    "build-prod": "npm run build-prod-firebase; npm run build-prof-github",
+    "deploy-prod": "npm run deploy-github ; npm run deploy-firebase",
+    "deploy-github": "hexo --config _config.yml,_config.github.yml deploy -g --user=yogendra --email=yogendrarampuria@gmail.com",
+    "deploy-firebase": "hexo --config _config.yml,_config.firebase.yml generate ; firebase deploy",
+    "ci-deploy-github": "hexo --config _config.yml,_config.github.yml deploy --user=travisci --email=ci@yogendra.me",
+    "ci-deploy-firebase": "firebase deploy",
     "test": "echo 'no test' && exit 0"
   },
   "dependencies": {

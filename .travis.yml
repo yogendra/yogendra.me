@@ -13,24 +13,25 @@ before_install:
 - echo -e "Host github.com\n\tHostName github.com\n\tUser git\n\tIdentityFile ~/.ssh/deploy_rsa\n" >> ~/.ssh/config
 - export PATH=$TRAVIS_BUILD_DIR/node_modules/.bin:$PATH
 install:
-- npm install hexo-cli -g
 - npm install
-- npm run env
 script:
 - npm run build-prod-firebase
 - npm run build-prod-github
 deploy:
-- provider: firebase
-  token:
-    secure: ChOI6fVipYgGLK3oBgZw0BJSdcezk5qxo1hrDVSKnYgg1nvoJYQeijFKa/GZ3+DUjWxT3LdPwLxFnjiL47JTbrz+HGjHUQkBgn/MqdFqZbHZ55EfOxmz/byUhe2T+/hoByDED5205Qw4h88n4XZjbaGIQjwFSqL+gYZrU43v7vKUrXakdiDj/IY4/7KMTWEszauq/zjHe+bqakAhN0Tdc+km+KBao2fd3YWHZKqc0VYFfl7fdsCX0FLFR7shrDWqhQuVVVJ14Swe9vTQVq+Ovc2fn5lQGAj4IIWz+AdhiqlECa7BSJifHCEjb7VMtrf8ptjyXDXg8+0SI3xJBlKkb9XtXO9e8YP3H9IoBZ2+pdZksmA+q56qxmXZmwJPhmllPZEN3zJ/WJ7H1u88wTrs3aK7V3Ws7kQWhqX43Td8saBwz8u0O1vLPEjg+tAu6naiODkaV9GeC0ACXjIHnUsXMiDACYWasv254TfclfAG0f/l78ZjQhlc5iBY/ITQVkb7B6V4PLBSpiCmozBtDbHXWs4oACitST51BOHZmlTuCmISF9sNmWgnjeg5BSSAIQC8YYYDLOb0O0nU2V8hCgkFjWIXdfRC5i9VyAD1Z/jNt8nWKPTdHKCERmyLRGsnRxygsZBsfagGH4woNPqDpk8UWmbaz82IBlKigqEbyPeHtLA=
+- provider: script
+  script: npm run ci-deploy-firebase
   skip_cleanup: true
   on:
     branch: master
 - provider: script
-  script: npm run deploy-prod-github
+  script: npm run ci-deploy-github
   skip_cleanup: true
   on:
     branch: master
 notifications:
   email:
     on_failure: always
+
+env:
+  global:
+  - secure: "PBJhLXAGxlnJTQrPRSdEp+PTO2lDvCs3L7n07o0XnmaTOFrf7KleGw3wgGr/rMkZfmbuCMBpiwUe+VOcgwGefxHbG7xLVxqcIUopaq/uaMcHy/gYhFTuQJJFVFZIpy37Js6sRM8o8nYbOnWElQJt93SotMZFNmE3SNcxF9ijrCj+RWLd7g3rM31sl3fGGUYg0O/yLS/wvL+aYXeWGhase18c2wdV34MlXmoLE0C/+AiMTCpOqWMNLoBoDYLdETKeisY7CyKi8mEPhBOCMLkcUjW3FMIXJiCBzFk6WD4BTN8ybaMf2HzZc91G8QQs9CT0PExFXUY0tm4w2EOeL7VTtGDclIDawfzp/J0brVPhFwMNSXB1LX7z5zl4IEN3SzyUvCYlUn+7Dto2EsoOsE2n0wrdiIT06l1MdK/4umXdC7hCtcURN57ceni/dz4UZhiNPD+EPizdHeudin+rAjOfNGIKj0wlUwiMp7KhkJtSFFJtTqCv14TtACU8IV2FJ+XQYOYjk9nlP7xrleHmouLxfPR7cShYN7A2ku8aM18yteoxhLDEhKmm6FB6fjDTZzSJWnclejC5pqmkvSR3Ej0J5RMEhFRq+zJccVWwvrNLjr6Hx0bkNBeA+9N/sROJLhV7seNVIWWjc/OREdmt8Jz1BRkqczzqtQ2AJT9owN0fYoM="
