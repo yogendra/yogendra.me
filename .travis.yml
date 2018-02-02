@@ -4,21 +4,19 @@ node_js:
 cache:
   npm: true
   directories:
-  - ".deploy_git"
-  - ".deploy_firebase"
-  - "node_modules"
-  - "themes/tranquilpeak/node_modules"
+  - .deploy_git
+  - .deploy_firebase
+  - node_modules
+  - themes/tranquilpeak/node_modules
 install:
 - npm install
-
 script:
 - npm run build:prod:github
 - npm run build:prod:firebase
-
 deploy:
 - provider: firebase
   token:
-   secure: ChOI6fVipYgGLK3oBgZw0BJSdcezk5qxo1hrDVSKnYgg1nvoJYQeijFKa/GZ3+DUjWxT3LdPwLxFnjiL47JTbrz+HGjHUQkBgn/MqdFqZbHZ55EfOxmz/byUhe2T+/hoByDED5205Qw4h88n4XZjbaGIQjwFSqL+gYZrU43v7vKUrXakdiDj/IY4/7KMTWEszauq/zjHe+bqakAhN0Tdc+km+KBao2fd3YWHZKqc0VYFfl7fdsCX0FLFR7shrDWqhQuVVVJ14Swe9vTQVq+Ovc2fn5lQGAj4IIWz+AdhiqlECa7BSJifHCEjb7VMtrf8ptjyXDXg8+0SI3xJBlKkb9XtXO9e8YP3H9IoBZ2+pdZksmA+q56qxmXZmwJPhmllPZEN3zJ/WJ7H1u88wTrs3aK7V3Ws7kQWhqX43Td8saBwz8u0O1vLPEjg+tAu6naiODkaV9GeC0ACXjIHnUsXMiDACYWasv254TfclfAG0f/l78ZjQhlc5iBY/ITQVkb7B6V4PLBSpiCmozBtDbHXWs4oACitST51BOHZmlTuCmISF9sNmWgnjeg5BSSAIQC8YYYDLOb0O0nU2V8hCgkFjWIXdfRC5i9VyAD1Z/jNt8nWKPTdHKCERmyLRGsnRxygsZBsfagGH4woNPqDpk8UWmbaz82IBlKigqEbyPeHtLA=
+    secure: ChOI6fVipYgGLK3oBgZw0BJSdcezk5qxo1hrDVSKnYgg1nvoJYQeijFKa/GZ3+DUjWxT3LdPwLxFnjiL47JTbrz+HGjHUQkBgn/MqdFqZbHZ55EfOxmz/byUhe2T+/hoByDED5205Qw4h88n4XZjbaGIQjwFSqL+gYZrU43v7vKUrXakdiDj/IY4/7KMTWEszauq/zjHe+bqakAhN0Tdc+km+KBao2fd3YWHZKqc0VYFfl7fdsCX0FLFR7shrDWqhQuVVVJ14Swe9vTQVq+Ovc2fn5lQGAj4IIWz+AdhiqlECa7BSJifHCEjb7VMtrf8ptjyXDXg8+0SI3xJBlKkb9XtXO9e8YP3H9IoBZ2+pdZksmA+q56qxmXZmwJPhmllPZEN3zJ/WJ7H1u88wTrs3aK7V3Ws7kQWhqX43Td8saBwz8u0O1vLPEjg+tAu6naiODkaV9GeC0ACXjIHnUsXMiDACYWasv254TfclfAG0f/l78ZjQhlc5iBY/ITQVkb7B6V4PLBSpiCmozBtDbHXWs4oACitST51BOHZmlTuCmISF9sNmWgnjeg5BSSAIQC8YYYDLOb0O0nU2V8hCgkFjWIXdfRC5i9VyAD1Z/jNt8nWKPTdHKCERmyLRGsnRxygsZBsfagGH4woNPqDpk8UWmbaz82IBlKigqEbyPeHtLA=
   skip_cleanup: true
   on:
     branch: master
@@ -27,13 +25,14 @@ deploy:
   repo: yognedra/yogendra.github.io
   keep-history: true
   skip-cleanup: true
-  github-token:
-    secure: "Hj1Uds1qph6GX6v0lHAulhboIXNVekmx+hdDscAsOVI11DShq/ErOsiM7RrndiMovE/3oQsQxLM+Fiymr2qvA1DHNpqCWhCUj+jXCpOyaj2p9a0V0MccfIPWwo/gJ9U8Sf++KU6hgFp/RXiGrVBGTTU0VHXNsmHoHPiRkTA/UIuJ0+UmsqMcr6lfLVeG0Ktfh4ATYoccD31VeMPilSHwTvpe7EkGpEPG1y5by3O2ec22dL9/bQb3J7qjXdjwmRN41Xh57WeZ0lT3QazPF8gLMrJUETM4CxUBWekLX9atrGQ5EqIFk9M3doLSl7LVLmWtqEGMIcNUWGAtmA4kFQIXD1KnTt/quRqRaH2PPakyLVO8+KhRj1hCIhMWZexzyyGmhyDBqq+fg/x17qqsMc3B2wuVj+cO9G/f87pKrBEySi7zO8tV/ctH3kI/kuWW933w4/tQP2LyZXJsToJOHa0CD1eO+2mPaY0dAaQ934KkLCtZuZLTocH50UspgaVDaJeIUDRNVZ4UqMPf3MJbCuahHm9Kiin11uujpJimhsBZ8p5qswByASNYCGtn0THFHjrEDfkbSF+OOaKStRqBT8LU94/uVx8TSEeKzJpHYDAnvZS/o7F5M+DHuB3vorm70wZOExOuDNPmqR8y4LLMPw8KfittrYBwXxCmaasEDFO9SM0="
+  github-token: $GITHUB_TOKEN
   commiter-from-gh: true
   verbose: true
   on:
     branch: master
-
 notifications:
   email:
     on_failure: always
+env:
+  global:
+  - secure: Z/hCwc2RXpRCy8JgcTfV6ZKyjCF55S+gOW0CYavqsLLvjDtFpJLGh+6kINhGeXXwBdj8qI5L4Ocsk4LzhjVeeFVRR9jo5ySlZQfNuhwV0y5y+KKH+sHsOUJGee4348qJZSpWHL+wPyoh08RLZz96Ut1u6izQ8iJJTHvJ8cBB8aUxUsCnoCwoYn+M2g0mxx21JWfwf7r6YdgPL7FCtB8DnGHU9bqcLzq5pvPTOsRiWOH6DD29iCJIwzKUYO8/BvxHR9h/rkD7nxYL5ia/wnZ80O1O4eAS1p9xFklNqbsffaGHpuk19UC/oRJuf0xUMZMLKgH9u3C0qg0U0792nuWvDZRIEcwHjmSKk8Gwr/NhLk7X5CWLNxhzDhJnTq0aLxqT68/rmjVTYlAqnm01KUMhztgaZtOwdPy+Q5mi3DyRsbQRMSwnbnx8nByobKgF4CHYDjvPP7z1tBsbsAs2DQfDlaQTK30n3a+/SF6jDcjh4ysBbLLLMPOy8sgg4CMEGI8FrnzDCqFKT5ms5uqHhu08LazMClUqMQCfPcqjhE/4N8c77oC99y277+iM7CmJKjkzIfaGt+E17p1V6Uvr9zN5WnH3//Hhsa7+PFKgXZIjLhSbpZQWmw+7Pba4Gj0wtmNgy1P9MJJ5v2nIxuNdPvzhvCPhfSH3ekYJMn0CISdyuO4=
