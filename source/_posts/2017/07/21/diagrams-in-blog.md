@@ -11,7 +11,7 @@ alias:
 - 2017/07/21/diagrams-in-hugo.html
 - 2017/07/21/diagrams-in-blog.html
 
-thumbnailImage: uml.png
+thumbnailImage: https://goo.gl/gtJUDg
 ---
 
 I use a text to diagram tool called [PlantUML](http://plantuml.org). It's perfect!
@@ -51,3 +51,5 @@ working locally. I have created a working Docker image ([yogendra/blog-toolbox:l
 to help me work around this
 
 **Upage**: Trying client side rendering
+
+[uml-diagram]: https://goo.gl/gtJUDg
