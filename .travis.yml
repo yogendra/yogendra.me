@@ -23,12 +23,14 @@ deploy:
   on:
     branch: master
 - provider: pages
-  local-dir: ".deploy_github"
+  local-dir: .deploy_github
   repo: yognedra/yogendra.github.io
   target-branch: master
   keep-history: true
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
+  commiter-from-gh: true
+  verbose: true
   on:
     branch: master
 
