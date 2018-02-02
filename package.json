@@ -6,7 +6,6 @@
     "version": "3.5.0"
   },
   "scripts": {
-    "hexo": "hexo --",
     "postinstall": "cd themes/tranquilpeak && npm install && npm run prod",
     "build": "npm run build:dev",
     "start": "hexo server --config _config.yml,_config.dev.yml",
