@@ -10,9 +10,9 @@ tags:
   - "blog"
   - "cd/ci"
   - "git"
-thumbnailImage: html-js-css.png
+thumbnailImage: https://goo.gl/EzDiVM
 ---
-I am embarking on this new journey to use [Statc Site Generator](https://www.staticgen.com/).
+I am embarking on this new journey to use [Static Site Generator](https://www.staticgen.com/).
 <!--more-->
 So far, I have managed to setup:
 
@@ -46,7 +46,7 @@ git submodule update --init --recursive
 
 Here are some changes that you should consider:
 
-* You should probably delete `site/content/*` and  `site/static/*`  (or not). 
+* You should probably delete `site/content/*` and  `site/static/*`  (or not).
 * You **should** change information in `config.toml`, consider changing:
   * googleAnalytics
   * baseUrl
@@ -69,13 +69,13 @@ What the hell! Read instruction in  `hugo server --help` to understand what each
 * -w : watch for changes
 * -D : build draft
 * -E : build expired pages
-* -F : build future date page, 
+* -F : build future date page,
 * -b : set base url to `http://localhost:1313`
 * --navigateToChanged : navigate browser to updated file
 * --cleanDestinationDir: Delete all the files that might be there in destination dir
 * -d : Destination dir to store files into
 
-You can add your own content using command like 
+You can add your own content using command like
 
 ``` shell
 cd site
@@ -122,14 +122,14 @@ Create a new project on Travis CI website  website. Login to Travis CI via `trav
 $ travis login
 ```
 
-Get a deployment token from firebase, for using in travis ci build environment. 
+Get a deployment token from firebase, for using in travis ci build environment.
 
 ``` shell
 $ firebase login:ci
 ```
 
-This should generate a string that looks like `1/AD7sdasdasdKJA824OvEFc1c89Xz2ilBlaBlaBla`. 
-Use following command to encrypt this string and use in `.travis.yml`. 
+This should generate a string that looks like `1/AD7sdasdasdKJA824OvEFc1c89Xz2ilBlaBlaBla`.
+Use following command to encrypt this string and use in `.travis.yml`.
 
 ``` shell
 $ travis encrypt "1/AD7sdasdasdKJA824OvEFc1c89Xz2ilBlaBlaBla" --add
@@ -148,3 +148,6 @@ deploy:
 ```
 
 That's it! Don't forget to checkin your changes.
+
+
+[html-js-css.png]: https://goo.gl/EzDiVM

@@ -13,10 +13,10 @@
     "node_modules": true,
     "themes": true
   },
-  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrap": "bounded",
   "[markdown]": {
     "editor.wordWrap": "on",
     "editor.quickSuggestions": true
   },
-  "editor.wordWrapColumn": 160
+  "editor.wordWrapColumn": 120
 }
