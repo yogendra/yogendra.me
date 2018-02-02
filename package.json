@@ -37,6 +37,7 @@
     "hexo-tag-fontawesome": "^1.0.0"
   },
   "devDependencies": {
-    "firebase-tools": "^3.17.3"
+    "firebase-tools": "^3.17.3",
+    "hexo-cli": "^1.0.4"
   }
 }
