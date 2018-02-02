@@ -11,10 +11,12 @@ before_install:
 - echo -e "Host github.com\n\tHostName github.com\n\tUser git\n\tIdentityFile $TRAVIS_BUILD_DIR/deploy_rsa\n" >> ~/.ssh/config
 - export PATH=$TRAVIS_BUILD_DIR/node_modules/.bin:$PATH
 install:
+- npm install hexo-cli -g
 - npm install
+- npm run env
 script:
-- npm run build:prod:github
-- npm run build:prod:firebase
+- npm run build-prod-firebase
+- npm run build-prod-github
 deploy:
 - provider: firebase
   token:
@@ -23,7 +25,8 @@ deploy:
   on:
     branch: master
 - provider: script
-  script: "npm run deploy:github"
+  script: npm run deploy-prod-github
+  skip_cleanup: true
   on:
     branch: master
 notifications:
