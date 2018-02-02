@@ -1,5 +1,3 @@
-dist: trusty
-sudo: false
 language: node_js
 node_js:
 - '8'
@@ -8,11 +6,14 @@ cache:
   directories:
   - ".deploy_git"
   - ".deploy_firebase"
+  - "node_modules"
 install:
 - npm install
+
 script:
 - npm run build:prod:github
 - npm run build:prod:firebase
+
 deploy:
 - provider: firebase
   token:
@@ -26,9 +27,10 @@ deploy:
   target-branch: master
   keep-history: false
   skip-cleanup: true
-  github-token: "$GITHUB_TOKEN"
+  github-token: $GITHUB_TOKEN
   on:
     branch: master
+
 notifications:
   email:
     on_failure: always
