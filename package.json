@@ -7,10 +7,9 @@
   },
   "scripts": {
     "postinstall": "cd themes/tranquilpeak && npm install && npm run prod",
-    "build": "npm run build:dev",
+    "build": "hexo --config _config.yml,_config.dev.yml generate",
     "start": "hexo server --config _config.yml,_config.dev.yml",
     "clean": "hexo clean",
-    "build-dev": "hexo --config _config.yml,_config.dev.yml generate",
     "build-prod": "npm run build-prod-firebase; npm run build-prod-github",
     "build-prod-github": "hexo --config _config.yml,_config.github.yml generate ",
     "build-prod-firebase": "hexo --config _config.yml,_config.firebase.yml generate",

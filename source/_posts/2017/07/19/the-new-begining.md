@@ -11,7 +11,9 @@ If its not working, try restarting it
 
 <!--more -->
 
-{% image right  https://goo.gl/ms4Tq1 "The New Begining" %}
+
+{% img figure right  https://goo.gl/ms4Tq1 "The New Begining" %}
+
 This is my attempt to restart. This is my 4th attempt to blog. I started blogging years ago. But something or the other always kept me from writing regularly.
 
 
@@ -19,8 +21,7 @@ Sometimes I was just lazy to write. But most of the times, I digressed into upda
 
 I don't have any particular agenda for this site. Just get scraps of information from all over the internet and put it in a way that I , and possibly others, can understand.
 
+
 ~~I will migrate date from my old site (someday).~~
 
 **Update**: Migrated content. Hugo was my first choice for new platform. But Hexo made it to top.
-
-[the-new-begining.jpg]:https://goo.gl/ms4Tq1
