@@ -5,9 +5,10 @@ categories:
   - Productivity
 date: 2015-04-25 16:00:58
 tags:
-thumbnailImage: brush.png
+thumbnailImage: https://goo.gl/5BZYLu
+
 ---
 We all need some ways to stay creative, isn't it?
 <!--more-->
 
-{% image clear center wpid-wp-1429948789215.jpeg "40 Ways to Stay Creative" %}
+{% img figure center https://goo.gl/eR6ymG "40 Ways to Stay Creative" %}

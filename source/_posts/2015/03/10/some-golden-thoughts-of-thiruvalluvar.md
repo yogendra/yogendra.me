@@ -6,15 +6,16 @@ id: 299
 categories:
   - Personal
 date: 2015-03-10 07:22:52
-thumbnailImage: thiruvalluvar.gif
+thumbnailImage: https://goo.gl/pXrftk
 ---
 
 Tirukkural by Tiruvalluvar (A Tamil - poet/writer) was written more than 5000 yrs ago. It’s one of the ancient science on Human behavior, which has not changed dispite of modern education & technology
 <!--more -->
+{% img center figure clear https://goo.gl/pXrftk %}
 
 1. If your child lies to you often, it is because you over-react too harshly to their inappropriate behavior.
 
-1. If your child is not taught to confide in you about their mistakes, you’ve lost them. 
+1. If your child is not taught to confide in you about their mistakes, you’ve lost them.
 
 1. If your child had poor self-esteem, it is because you advice them more than you encourage them.
 

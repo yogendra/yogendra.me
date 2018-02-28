@@ -6,10 +6,10 @@ categories:
 date: 2015-01-01 00:58:51
 tags:
   - greeting
-thumbnailImage: wpid-2015-01-01-00.35.28.jpg
+thumbnailImage: https://goo.gl/To2tMs
 ---
 Happy New Year to All
 
 -- Rampuria Family
 <!--more -->
-{% image clear center fancybox wpid-2015-01-01-00.35.28.jpg "Happy New Year" %}
+{% img clear center fancybox https://goo.gl/MukKF9 "Happy New Year" %}

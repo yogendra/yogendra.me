@@ -6,9 +6,9 @@ id: 337
 categories:
   - Personal
 date: 2015-12-22 15:58:23
-thumbnailImage: parenting.jpg
+thumbnailImage: https://goo.gl/5HiBx2
 ---
 
 Lets connet with our little ones. Hope this helps you, as much as it helped me.
 <!--more-->
-{% image disconnecting-words-versus-connecting-words-for-better-parenting-1450666296.jpg "Parenting Lessons" %}
+{% img figure center https://goo.gl/G4Gdxr "Parenting Lessons" %}

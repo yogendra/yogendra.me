@@ -1,16 +1,16 @@
 ---
 title: Operation Raahat
-alias: 
+alias:
   - 2015/04/11/operation-rahat/index.html
 id: 310
 categories:
   - Inspirational
 date: 2015-04-11 13:10:58
 tags:
-thumbnailImage: vksingh.jpg
+thumbnailImage: https://goo.gl/okouJ8
 ---
 
-In the past six months, a war for political dominance between the two sects of Muslims—Sunni and Zaidi Shia has intensified in Yemen, the Arab country in southwest Asia that has been imploding since 2011. 
+In the past six months, a war for political dominance between the two sects of Muslims—Sunni and Zaidi Shia has intensified in Yemen, the Arab country in southwest Asia that has been imploding since 2011.
 <!--more-->
 Saudi Arabia has been trying to thwart the attempt by the Iran-backed Zaidi Shia group to take control of the country.
 

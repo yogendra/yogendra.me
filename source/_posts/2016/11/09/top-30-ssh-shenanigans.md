@@ -12,7 +12,7 @@ thumbnailImage: https://goo.gl/zNqaSE
 ---
 
 Good list of commands to be SSH 'Yoda'. I like the tunnels and screen the most in these. They have been so useful over the years, for development and troubleshooting.
-
+<!--more-->
 Here is a short list that I use ofter:
 
 ``` bash
