@@ -1,10 +1,6 @@
 ---
 title: IDD Dialer
 date: 2018-04-14 12:49:18
-tags:
-  - productivity
-  - android
-  - app
 thumbnailImage: https://go.yogendra.me/2vg2Zxe
 ---
 
@@ -23,6 +19,7 @@ This application replaces `+` in the your outgoing number with another prefix.
 # How does it work?
 
 {% image right fig-50 https://go.yogendra.me/2vbUnHM %}
+
 This app replaces `+` in the outgoing calls with the **prefix** that you supplied in the settings. It will skip this replacement for any number that starts with your local ISD code. So if you are in Singapore and using StarHub IDD service, you may have following settings (See image):
 
 * Enabled: Yes
