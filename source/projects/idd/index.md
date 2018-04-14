@@ -36,8 +36,12 @@ Post your feedback here in comments.
 [![Get it on Google Play][playstore-icon]][app-link]
 
 
+[Terms & Conditions][tnc] | [Privacy Policy][privacy-policy]
+
 [number-replace-image]: https://go.yogendra.me/2Hlkp0m
 [icon]: https://go.yogendra.me/2vg2Zxe
 [example-starhub]: https://go.yogendra.me/2vbUnHM
 [app-link]: https://play.google.com/store/apps/details?id=me.yogendra.idd&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1
 [playstore-icon]: https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png
+[privacy-policy]: /projects/idd/privacy_policy.html
+[tnc]: /projects/idd/terms_and_conditions.html
