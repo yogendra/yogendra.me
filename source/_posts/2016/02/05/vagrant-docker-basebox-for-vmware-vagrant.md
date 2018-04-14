@@ -8,7 +8,7 @@ tags:
 
 id: 340
 categories:
-  - Projects
+  - Project
 date: 2016-02-05 23:03:42
 thumbnailImage: https://goo.gl/cAHzYe
 ---
