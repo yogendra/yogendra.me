@@ -2,14 +2,11 @@
   "hosting": {
     "public": ".deploy_firebase",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [
+    "redirects": [
       {
-        "source": "jumpbox",
-        "destination": "https://gist.githubusercontent.com/yogendra/b0d368369cd0967363bd08b0e6b102bd/raw/jumpbox.sh"
-      },
-      {
-        "source": "jumpbox-1",
-        "destination": "https://gist.githubusercontent.com/yogendra/b0d368369cd0967363bd08b0e6b102bd/raw/jumpbox.sh"
+        "source": "/jumpbox",
+        "destination": "https://gist.githubusercontent.com/yogendra/b0d368369cd0967363bd08b0e6b102bd/raw/jumpbox.sh",
+        "type": 301
       }
     ]
   }
