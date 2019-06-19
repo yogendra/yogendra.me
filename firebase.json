@@ -1,10 +1,12 @@
 {
   "hosting": {
     "public": ".deploy_firebase",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "jumpbox",
+        "destination": "https://gist.githubusercontent.com/yogendra/b0d368369cd0967363bd08b0e6b102bd/raw/jumpbox.sh"
+      }
     ]
   }
 }
