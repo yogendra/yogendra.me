@@ -1,6 +1,5 @@
 {
   "files.trimTrailingWhitespace": true,
-  "markdown.previewFrontMatter": "show",
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -9,9 +8,7 @@
     "**/.DS_Store": true,
     ".deploy_git": true,
     ".deploy_firebase": true,
-    "public": true,
     "node_modules": true,
-    "themes": true
   },
   "editor.wordWrap": "bounded",
   "[markdown]": {
