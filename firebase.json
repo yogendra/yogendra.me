@@ -9,13 +9,23 @@
         "type": 301
       },
       {
-        "source": "minimal-vimrc",
-        "destination": "https://gist.githubusercontent.com/yogendra/318c09f0cd2548bdd07f592722c9bbec/raw/minimal-vimrc",
+        "source": "/minimal-vimrc",
+        "destination": "https://gist.githubusercontent.com/yogendra/56e6d36e18f9b93236341c7e97afa56a/raw/.vimrc",
         "type": 301
       },
       {
-        "source": "setup-vim",
+        "source": "/setup-vim",
         "destination": "https://gist.githubusercontent.com/yogendra/318c09f0cd2548bdd07f592722c9bbec/raw/setup-vim.sh",
+        "type": 301
+      },
+      {
+        "source": "/k8s-workspace",
+        "destination": "https://gist.githubusercontent.com/yogendra/56e6d36e18f9b93236341c7e97afa56a/raw/k8s-workspace.sh",
+        "type": 301
+      },
+      {
+        "source": "/k8s-profile",
+        "destination": "https://gist.githubusercontent.com/yogendra/56e6d36e18f9b93236341c7e97afa56a/raw/k8s-profile.sh",
         "type": 301
       }
     ]
