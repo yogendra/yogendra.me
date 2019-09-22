@@ -7,6 +7,16 @@
         "source": "/jumpbox",
         "destination": "https://gist.githubusercontent.com/yogendra/b0d368369cd0967363bd08b0e6b102bd/raw/jumpbox.sh",
         "type": 301
+      },
+      {
+        "source": "minimal-vimrc",
+        "destination": "https://gist.githubusercontent.com/yogendra/318c09f0cd2548bdd07f592722c9bbec/raw/minimal-vimrc",
+        "type": 301
+      },
+      {
+        "source": "setup-vim",
+        "destination": "https://gist.githubusercontent.com/yogendra/318c09f0cd2548bdd07f592722c9bbec/raw/setup-vim.sh",
+        "type": 301
       }
     ]
   }
