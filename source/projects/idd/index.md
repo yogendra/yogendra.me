@@ -4,6 +4,8 @@ date: 2018-04-14 12:49:18
 thumbnailImage: https://go.yogendra.me/2vg2Zxe
 ---
 
+# [Direct APK Download Here][download]
+
 {% image right https://go.yogendra.me/2vg2Zxe %}
 IDD Dialer is a simple utility application for Android. It simplifies usage of IDD service, Calling Cards, etc.
 
@@ -38,6 +40,7 @@ Post your feedback here in comments.
 
 [Terms & Conditions][tnc] | [Privacy Policy][privacy-policy]
 
+[download]: https://drive.google.com/file/d/15IO80cdZgxTb1HsYO51fbB701CWSXE_K/view
 [number-replace-image]: https://go.yogendra.me/2Hlkp0m
 [icon]: https://go.yogendra.me/2vg2Zxe
 [example-starhub]: https://go.yogendra.me/2vbUnHM
