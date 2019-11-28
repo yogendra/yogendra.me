@@ -38,6 +38,8 @@ Post your feedback here in comments.
 [![Get it on Google Play][playstore-icon]][app-link]
 
 
+# [Direct APK Download Here][download]
+
 [Terms & Conditions][tnc] | [Privacy Policy][privacy-policy]
 
 [download]: https://drive.google.com/file/d/15IO80cdZgxTb1HsYO51fbB701CWSXE_K/view
