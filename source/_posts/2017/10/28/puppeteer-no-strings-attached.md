@@ -3,16 +3,16 @@ layout: post
 title: Puppeteer - No Strings Attached
 date: 2017-10-28 23:52:08
 category:
-- Talk
+  - Talk
 tags:
-- gdg
-- testing
-thumbnailImage: https://goo.gl/Jy9sXC
+  - gdg
+  - testing
+thumbnailImage: logo.png
 ---
 
-![][gdg-collage.jpg]
+![GDG-SG][gdg-collage.jpg]
 
-I am a Co-Manager for [Google Developer Group - Singapore][24] ([FB][25]). And today was our annual [GDG-SG DevFest 2017][15] event. Apart from being an organizer, I was also a speaker. I gave a short talk on [Puppeteer][1].  This post is (almost) a transcript of my speech today. Slides can be found [here][17]
+I am a Co-Manager for [Google Developer Group - Singapore][24] ([FB][25]). And today was our annual [GDG-SG DevFest 2017][15] event. Apart from being an organizer, I was also a speaker. I gave a short talk on [Puppeteer][1]. This post is (almost) a transcript of my speech today. Slides can be found [here][17]
 
 <!--more-->
 
@@ -20,7 +20,7 @@ I am a Co-Manager for [Google Developer Group - Singapore][24] ([FB][25]). And t
 
 ## Overview
 
-[Puppeteer][1] is a [Node JS][2] API published by  Chrome team. It is an API to control Chrome browser via [DevTools Protocol][4].  Puppeteer was released shortly after the Chrome 59. This version of Chrome brought us [Headless Chrome][3]. It requires [Node JS][2] version 6.4+. I would recommend using version 7.5+, so you can use `async/await` feature from [ES2017][5].
+[Puppeteer][1] is a [Node JS][2] API published by Chrome team. It is an API to control Chrome browser via [DevTools Protocol][4]. Puppeteer was released shortly after the Chrome 59. This version of Chrome brought us [Headless Chrome][3]. It requires [Node JS][2] version 6.4+. I would recommend using version 7.5+, so you can use `async/await` feature from [ES2017][5].
 
 ### Features
 
@@ -52,7 +52,7 @@ Browser automation and e2e testing is a very busy area. Lots of options for fram
 
 ### The 'Selenium' Empire
 
-[Selenium][10] is probably the most used browser automation and testing tool for frontend. It is the "Automation Emperor" for me. It has the most comprehensive  coverage in terms of languages and target browsers. It has language binding for Java, Node, Ruby, Python, etc. You name it and it has language binding for it. And on the other side, it has web driver for every browser or browser like system. It has drivers for all browsers, Chrome, Safari, Firefox, Opera, etc. It also has drivers for like ok PhantomJS and Appium.
+[Selenium][10] is probably the most used browser automation and testing tool for frontend. It is the "Automation Emperor" for me. It has the most comprehensive coverage in terms of languages and target browsers. It has language binding for Java, Node, Ruby, Python, etc. You name it and it has language binding for it. And on the other side, it has web driver for every browser or browser like system. It has drivers for all browsers, Chrome, Safari, Firefox, Opera, etc. It also has drivers for like ok PhantomJS and Appium.
 
 They have managed to achieve the most unimaginable feat. They have got these giants on a common footing. It enjoy a lot of love and support from community, including myself. So, why am I even talking about puppeteer.
 
@@ -70,7 +70,7 @@ Lets go through some samples to understand the development with Puppeteer.
 
 Puppeteer is a Node JS API. Its published as an NPM package. You can install it in you project with simple `npm install`
 
-``` shell
+```shell
 $ npm i --save-dev puppeteer
 > puppeteer@0.12.0 install /Users/user/.nvm/project1/node_modules/puppeteer
 > node install.js
@@ -87,32 +87,28 @@ Notice how it has also downloaded Chromium. This ensures that it has a compatibl
 
 Taking a screenshot in an automation tool is like a "Hello World!" thing.
 
-``` javascript screenshot.js
-'use strict';
-const puppeteer = require('puppeteer');
+```javascript screenshot.js
+"use strict";
+const puppeteer = require("puppeteer");
 
 (async () => {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-    await page.goto('https://www.google.com',
-        { waitUntil: 'networkidle' }
-    );
-    await page.screenshot(
-        { path: 'screenshot.png' }
-    );
-    await browser.close();
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto("https://www.google.com", { waitUntil: "networkidle" });
+  await page.screenshot({ path: "screenshot.png" });
+  await browser.close();
 })();
 ```
 
 [Source](screenshot.js)
 
-If you are not familiar with `async/await`, I would recommend reading [this][5]. Most methods in Puppeteer API return a Promise. `await` ensures that you wait for a promise to resolve or reject before proceeding to next instruction. Line **5**, invokes `launch()`, which launches Chromium. You can specify launch options as an object parameter, like `puppeteer.launch({headless: false})`. See all the options in [documentation][14] page. Line **6** creates a new tab with `newPage()` method. `goto()` method on line **7** navigates page to a URL. `waitUntil` ensures that page  and its and related assets (js/images/css) are loaded, before promise is resolved.
+If you are not familiar with `async/await`, I would recommend reading [this][5]. Most methods in Puppeteer API return a Promise. `await` ensures that you wait for a promise to resolve or reject before proceeding to next instruction. Line **5**, invokes `launch()`, which launches Chromium. You can specify launch options as an object parameter, like `puppeteer.launch({headless: false})`. See all the options in [documentation][14] page. Line **6** creates a new tab with `newPage()` method. `goto()` method on line **7** navigates page to a URL. `waitUntil` ensures that page and its and related assets (js/images/css) are loaded, before promise is resolved.
 
 On line **10-12**, `screenshot()` method captures an image of output and stores it in `screenshot.png`. This looks plain and simple. And that is what made me like this API. It is clean and simple.
 
 You can run this with following command
 
-``` shell
+```shell
 $ node screenshot.js
 $
 ```
@@ -125,19 +121,17 @@ This produces `screenshot.png` in the current directory.
 
 This is the single biggest reason for me to use Puppeteer. PDF generation is a breeze! Heres how you can do it.
 
-``` javascript pdf.js
-'use strict';
-const puppeteer = require('puppeteer');
+```javascript pdf.js
+"use strict";
+const puppeteer = require("puppeteer");
 
 (async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto('https://news.ycombinator.com',
-    { waitUntil: 'networkidle' }
-  );
+  await page.goto("https://news.ycombinator.com", { waitUntil: "networkidle" });
   await page.pdf({
-    path: 'hn.pdf',
-    format: 'A4'
+    path: "hn.pdf",
+    format: "A4"
   });
   await browser.close();
 })();
@@ -154,32 +148,33 @@ We will now generate PDF from hacker news landing page. Code is not very differe
 
 I have used Puppeteer most for this. In my work environment I have need for integration via web pages. There are case where I don't have access to a data API for integration. Puppeteer can make it possible for you to expose a "web" site as a JSON api.
 
-``` javascript scrape.js
+```javascript scrape.js
 `use strict`;
 
-const SELECTOR_BOOK_IMAGE = '#default > div > div > div > div > section > div:nth-child(2) > ol > li:nth-child(1) > article > div.image_container > a > img';
-const puppeteer = require('puppeteer');
+const SELECTOR_BOOK_IMAGE =
+  "#default > div > div > div > div > section > div:nth-child(2) > ol > li:nth-child(1) > article > div.image_container > a > img";
+const puppeteer = require("puppeteer");
 
 let scrape = async () => {
-    const browser = await puppeteer.launch({ headless: false });
-    const page = await browser.newPage();
-    await page.goto('http://books.toscrape.com/');
-    await page.waitFor(1000);
-    await page.click(SELECTOR_BOOK_IMAGE);
-    await page.waitFor(2000);
-    const result = await page.evaluate(() => {
-        let title = document.querySelector('h1').innerText;
-        let price = document.querySelector('.price_color').innerText;
-        return {
-            title,
-            price
-        }
-    });
-    await browser.close();
-    return result;
+  const browser = await puppeteer.launch({ headless: false });
+  const page = await browser.newPage();
+  await page.goto("http://books.toscrape.com/");
+  await page.waitFor(1000);
+  await page.click(SELECTOR_BOOK_IMAGE);
+  await page.waitFor(2000);
+  const result = await page.evaluate(() => {
+    let title = document.querySelector("h1").innerText;
+    let price = document.querySelector(".price_color").innerText;
+    return {
+      title,
+      price
+    };
+  });
+  await browser.close();
+  return result;
 };
-scrape().then((value) => {
-    console.log(value); // Success!
+scrape().then(value => {
+  console.log(value); // Success!
 });
 ```
 
@@ -191,7 +186,7 @@ On line 13, a function is dispatched for evaluation on the DOM. This function go
 
 You can simply run this with `node` command.
 
-``` shell
+```shell
 $ node scrape.js
 { title: 'A Light in the Attic', price: '£51.77' }
 ```
@@ -206,8 +201,8 @@ Puppeteer is a very promising project. In a very short period (< 6 month) it has
 
 It is a very good replacement for PhantomJS. However, my key concern as at the moment are:
 
-* Google Cloud Function (GCF) does not support Node JS 6.4+. So, you have to use cloud VM or Container service to run this in cloud. Hopefully next version of LTS will be 8+, and will bring all the goodness of async/await into the mix
-* Lack of support for non-Chrome based browser could be discouraging for many developers. We all want to keep tool/library dependency low and single codebase for testing. If you project demands multi-browser testing, you will end up in a fractured state. Better stick with WebDriver/Selenium. May be WebDriver will adopt some part of Puppeteer API.
+- Google Cloud Function (GCF) does not support Node JS 6.4+. So, you have to use cloud VM or Container service to run this in cloud. Hopefully next version of LTS will be 8+, and will bring all the goodness of async/await into the mix
+- Lack of support for non-Chrome based browser could be discouraging for many developers. We all want to keep tool/library dependency low and single codebase for testing. If you project demands multi-browser testing, you will end up in a fractured state. Better stick with WebDriver/Selenium. May be WebDriver will adopt some part of Puppeteer API.
 
 I also found the e2e testing support very _unclean_. Its possible, workable, but now readable. I would like to see a very clean integration with likes of cucumber, mocha, chai, etc.
 
@@ -215,12 +210,12 @@ I also found the e2e testing support very _unclean_. Its possible, workable, but
 
 Here are some links that I used for preparing my presentation.
 
-* [Puppeteer Home][1]
-* [Try Puppeteer in Browser][18]
-* [Puppetron][19]  ([Demo][20])
-* [Getting Started with Headless Chrome - Eric Bidelman][21]
-* [Getting Started with Puppeteer and Headless Chrome Web Scraping  - Emad Ehsan][22]
-* [A Guide to Automating and Scraping - Brandon Morelli][23]
+- [Puppeteer Home][1]
+- [Try Puppeteer in Browser][18]
+- [Puppetron][19] ([Demo][20])
+- [Getting Started with Headless Chrome - Eric Bidelman][21]
+- [Getting Started with Puppeteer and Headless Chrome Web Scraping - Emad Ehsan][22]
+- [A Guide to Automating and Scraping - Brandon Morelli][23]
 
 ### Questions
 
@@ -231,42 +226,41 @@ Technically, Yes. You can setup data pipeline to crawl and extract data. You cas
 Yes. You can use `newPage()` method to create multiple tabs. And for each tab you can have a different execution code. I have tried it with 2 tabs. Here is a code sample for the last example (scraping) that does same thing but five times, concurrently.
 
 ```javascript scrape-multi.js
-const SELECTOR_BOOK_IMAGE = '#default > div > div > div > div > section > div:nth-child(2) > ol > li:nth-child(1) > article > div.image_container > a > img';
-const puppeteer = require('puppeteer');
+const SELECTOR_BOOK_IMAGE =
+  "#default > div > div > div > div > section > div:nth-child(2) > ol > li:nth-child(1) > article > div.image_container > a > img";
+const puppeteer = require("puppeteer");
 
-let scrapeSite = async (browser) => {
-    const page = await browser.newPage();
-    await page.goto('http://books.toscrape.com/');
-    await page.waitFor(1000);
-    await page.click(SELECTOR_BOOK_IMAGE);
-    await page.waitFor(2000);
-    const result = await page.evaluate(() => {
-        let title = document.querySelector('h1').innerText;
-        let price = document.querySelector('.price_color').innerText;
+let scrapeSite = async browser => {
+  const page = await browser.newPage();
+  await page.goto("http://books.toscrape.com/");
+  await page.waitFor(1000);
+  await page.click(SELECTOR_BOOK_IMAGE);
+  await page.waitFor(2000);
+  const result = await page.evaluate(() => {
+    let title = document.querySelector("h1").innerText;
+    let price = document.querySelector(".price_color").innerText;
 
-        return {
-            title,
-            price
-        }
-
-    });
-    return result;
-}
-let scrape = async () => {
-    const browser = await puppeteer.launch({ headless: false });
-    const result = await Promise.all([
-        scrapeSite(browser),
-        scrapeSite(browser),
-        scrapeSite(browser),
-        scrapeSite(browser),
-        scrapeSite(browser)
-    ]);
-    await browser.close();
-    return result;
-
+    return {
+      title,
+      price
+    };
+  });
+  return result;
 };
-scrape().then((value) => {
-    console.log(value); // Success!
+let scrape = async () => {
+  const browser = await puppeteer.launch({ headless: false });
+  const result = await Promise.all([
+    scrapeSite(browser),
+    scrapeSite(browser),
+    scrapeSite(browser),
+    scrapeSite(browser),
+    scrapeSite(browser)
+  ]);
+  await browser.close();
+  return result;
+};
+scrape().then(value => {
+  console.log(value); // Success!
 });
 ```
 
@@ -277,26 +271,28 @@ I have not tried it, but as you can evaluate any valid javascript code using API
 
 Below is a code that dumps each css being accessed by the page.
 
-``` javascript scrape-dump-css.js
-const puppeteer = require('puppeteer');
+```javascript scrape-dump-css.js
+const puppeteer = require("puppeteer");
 
 let scrape = async () => {
-    const browser = await puppeteer.launch({ headless: false });
-    const page = await browser.newPage();
+  const browser = await puppeteer.launch({ headless: false });
+  const page = await browser.newPage();
 
-    await page.setRequestInterceptionEnabled(true);
-    page.on('request', r => { r.continue(); })
-    page.on('response', r => {
-        const url = r.url;
-        if (url.endsWith("css")) {
-            r.text().then(s => {
-                console.log("// Source:" + url);
-                console.log(s);
-            });
-        }
-    });
-    await page.goto('http://books.toscrape.com/');
-    await browser.close();
+  await page.setRequestInterceptionEnabled(true);
+  page.on("request", r => {
+    r.continue();
+  });
+  page.on("response", r => {
+    const url = r.url;
+    if (url.endsWith("css")) {
+      r.text().then(s => {
+        console.log("// Source:" + url);
+        console.log(s);
+      });
+    }
+  });
+  await page.goto("http://books.toscrape.com/");
+  await browser.close();
 };
 scrape();
 ```
@@ -344,12 +340,11 @@ Thanks to [Bharathi][27] and [Hari][28] (GDG Mangement team) for the opportunity
 [30]: https://twitter.com/heliumlif
 [31]: https://twitter.com/dirkprimbs
 [32]: https://twitter.com/perfinion
-[gdg-collage.jpg]: https://go.yogendra.me/2EIt2N2
-[slides.001.jpeg]: https://go.yogendra.me/2HAo47U
-[slides.012.jpeg]: https://go.yogendra.me/2HpSbSd
-[screenshot.png]: https://go.yogendra.me/2GWZG3n
-[hn.jpg]: https://go.yogendra.me/2JLyrqk
-[special-thanks.jpg]: https://go.yogendra.me/2JMxgqK
-[hn.pdf]: https://drive.google.com/open?id=1oaB3xPRD24uH_2c0V8hdQwMaee0HJNYu
-[puppeteer-logo]: https://goo.gl/Jy9sXC
-
+[gdg-collage.jpg]: gdg-collage.jpg
+[slides.001.jpeg]: slides.001.jpeg
+[slides.012.jpeg]: slides.012.jpeg
+[screenshot.png]: screenshot.png
+[hn.jpg]: hn.jpg
+[special-thanks.jpg]: special-thanks.jpg
+[hn.pdf]: hn.pdf
+[puppeteer-logo]: logo.png
