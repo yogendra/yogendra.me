@@ -10,12 +10,11 @@
     ".deploy_firebase": true,
     "node_modules": true
   },
-  "editor.wordWrap": "bounded",
+  "editor.wordWrap": "on",
   "[markdown]": {
-    "editor.wordWrap": "off",
     "editor.quickSuggestions": true
   },
-  "editor.wordWrapColumn": 300,
+  "editor.wordWrapColumn": 120,
   "files.associations": {
     "*.html": "jekyll"
   }
