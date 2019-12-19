@@ -10,13 +10,13 @@ tags:
 thumbnailImage: logo.png
 ---
 
-![GDG-SG][gdg-collage.jpg]
-
 I am a Co-Manager for [Google Developer Group - Singapore][24] ([FB][25]). And today was our annual [GDG-SG DevFest 2017][15] event. Apart from being an organizer, I was also a speaker. I gave a short talk on [Puppeteer][1]. This post is (almost) a transcript of my speech today. Slides can be found [here][17]
 
 <!--more-->
 
-![][slides.001.jpeg]
+![GDG-SG][gdg-collage]
+
+![][slides-001]
 
 ## Overview
 
@@ -58,7 +58,7 @@ They have managed to achieve the most unimaginable feat. They have got these gia
 
 That brings me nicely into the next piece. Architecture-wise Selenium and Puppeteer are slightly different. Selenium achieve browser automation though an intermediate proxy, the [WebDriver][11]. WebDriver is a per-browser component implementing remote control capabilities. It exposes an restful API interface. A language binding uses these APIs to interact and control browser.
 
-![][slides.012.jpeg]
+![][slides-012]
 
 Puppeteer takes a leaner approach to this and taps straight into the DevTools protocol of the browser. This makes it possible to easily keep keep with browser features and automation API, in sync.
 
@@ -141,8 +141,8 @@ const puppeteer = require("puppeteer");
 
 We will now generate PDF from hacker news landing page. Code is not very different from what we saw in screenshot example. Line **20-23** generates PDF instead of screenshot. And thats it. You can specify paper size for the PDF in the optional argument. Look at [documentation][16] for more options. Its output would be identical to "Print PDF" function of Chrome or Chromium. It uses print media css.
 
-![][hn.jpg]
-[Link to actual extracted PDF][hn.pdf]
+![][hn]
+[Link to actual extracted PDF][hn-pdf]
 
 ### Web Scraping
 
@@ -302,7 +302,7 @@ scrape();
 ## Thanks
 
 My father ([Shri. Noratan Rampuria][26]) has always been very supportive of my life and career choices. And he showed his support once again. He was there for my talk and had looked happy. Thanks papa 🙏!
-![][special-thanks.jpg]
+![][special-thanks]
 
 Many ex and current colleagues were also at the event and showed their support. Thanks folks🤝!
 
@@ -340,11 +340,11 @@ Thanks to [Bharathi][27] and [Hari][28] (GDG Mangement team) for the opportunity
 [30]: https://twitter.com/heliumlif
 [31]: https://twitter.com/dirkprimbs
 [32]: https://twitter.com/perfinion
-[gdg-collage.jpg]: gdg-collage.jpg
-[slides.001.jpeg]: slides.001.jpeg
-[slides.012.jpeg]: slides.012.jpeg
+[gdg-collage]: gdg-collage.jpg
+[slides-001]: slides.001.jpeg
+[slides-012]: slides.012.jpeg
 [screenshot.png]: screenshot.png
-[hn.jpg]: hn.jpg
-[special-thanks.jpg]: special-thanks.jpg
-[hn.pdf]: hn.pdf
+[hn]: hn.jpg
+[special-thanks]: special-thanks.jpg
+[hn-pdf]: hn.pdf
 [puppeteer-logo]: logo.png
