@@ -17,5 +17,6 @@
   "editor.wordWrapColumn": 120,
   "files.associations": {
     "*.html": "jekyll"
-  }
+  },
+  "tabnine.disable_file_regex": ["[.]md$"]
 }
