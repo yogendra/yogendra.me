@@ -5,10 +5,11 @@ categories:
   - Jokes
 date: 2015-03-30 01:24:18
 tags:
-thumbnailImage: https://goo.gl/PrRKbL
+thumbnailImage: old-photo.jpg
 ---
+
 Lol
+
 <!--more -->
 
-{% img figure  clear center https://goo.gl/PrRKbL "An Old Photo" %}
-
+[![](an-old-photo/old-photo.jpg "An Old Photo")](an-old-photo/old-photo.jpg)
