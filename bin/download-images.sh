@@ -8,9 +8,9 @@ FILE_NAME_NO_EXT=${FILE_NAME%%.*}
 FILE_DIR=$(dirname $FILE)
 ASSET_DIR=$FILE_DIR/$FILE_NAME_NO_EXT
 
-echo mkdir -p $ASSET_DIR
+mkdir -p $ASSET_DIR
 
 grep -Eo https\?://goo.gl/.\\S+  $FILE | sort | uniq | while read url
 do
-echo Download $url
+  (cd $ASSET_DIR && open $url)
 done
