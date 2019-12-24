@@ -6,7 +6,7 @@ thumbnailImage: app-icon.png
 
 # [Direct APK Download Here][download]
 
-{% image right app-icon.png %}
+![type-icon-right](app-icon.png "IDD")
 IDD Dialer is a simple utility application for Android. It simplifies usage of IDD service, Calling Cards, etc.
 
 Most of the times, using these services requires you to either put custom numbers in your address book or copy-paste-edit phone numbers. Example, if you want to dial `+911234567890`, and idd service needs you to put `018`. So, you are expected to dial `018911234567890`.
@@ -20,7 +20,7 @@ This application replaces `+` in the your outgoing number with another prefix.
 
 # How does it work?
 
-{% image right fig-50 settings.png %}
+![type-icon-right](settings.png "IDD Settings")
 
 This app replaces `+` in the outgoing calls with the **prefix** that you supplied in the settings. It will skip this replacement for any number that starts with your local ISD code. So if you are in Singapore and using StarHub IDD service, you may have following settings (See image):
 
