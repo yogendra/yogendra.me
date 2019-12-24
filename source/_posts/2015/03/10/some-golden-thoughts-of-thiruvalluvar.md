@@ -6,12 +6,14 @@ id: 299
 categories:
   - Personal
 date: 2015-03-10 07:22:52
-thumbnailImage: https://goo.gl/pXrftk
+thumbnailImage: thiruvalluvar.gif
 ---
 
 Tirukkural by Tiruvalluvar (A Tamil - poet/writer) was written more than 5000 yrs ago. It’s one of the ancient science on Human behavior, which has not changed dispite of modern education & technology
+
 <!--more -->
-{% img center figure clear https://goo.gl/pXrftk %}
+
+![](thiruvalluvar.gif)
 
 1. If your child lies to you often, it is because you over-react too harshly to their inappropriate behavior.
 
