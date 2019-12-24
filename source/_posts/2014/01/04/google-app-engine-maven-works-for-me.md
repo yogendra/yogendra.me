@@ -10,6 +10,7 @@ id: 244
 date: 2014-01-04 02:23:58
 thumbnailImage: maven.png
 ---
+
 Google has released its App Engine SDK on Maven central as a zip. But its very large and causes a "**Error 503 backend read error**". <!--more-->
 So, after a lot of head-banging I resolved this by adding SDK zip package (Yes! one from website) and a few jars (optional), to maven. Skip to end for the commands. You may have to modify these for a newer version.
 
@@ -21,7 +22,7 @@ I created a simple maven project for some usual "help a friend" work. It worked 
 
 And,  the nightmare began. I added following plugin and dependency in `pom.xml`  based on official documentation.
 
-``` xml App Engie SDK Dependency
+```xml App Engie SDK Dependency
 <dependency>
   <groupId>com.google.appengine</groupId>
   <artifactId>appengine-api-1.0-sdk</artifactId>
@@ -29,7 +30,7 @@ And,  the nightmare began. I added following plugin and dependency in `pom.xml`
 </dependency>
 ```
 
-``` xml  App Engine Maven Plugin
+```xml  App Engine Maven Plugin
 <plugin>
   <groupId>com.google.appengine</groupId>
   <artifactId>appengine-maven-plugin</artifactId>
@@ -39,19 +40,19 @@ And,  the nightmare began. I added following plugin and dependency in `pom.xml`
 
 Just to be safe, I downloaded latest GAE SDK (1.8.8), Eclipse Plugin, etc. As per documentation, I tried to start dev server with following command:
 
-``` shell Fire up local server
+```shell Fire up local server
 mvn appengine:devserver_start
 ```
 
 After a long list of downloads, build failed. Bang! The trouble started. Got this:
 
-``` shell GAE Maven Failure
+```shell GAE Maven Failure
 [INFO] <<< appengine-maven-plugin:1.8.8:devserver_start (default-cli) @ java-servlet <<<
-[INFO] 
+[INFO]
 [INFO] --- appengine-maven-plugin:1.8.8:devserver_start (default-cli) @ java-servlet ---
-[INFO] 
+[INFO]
 [INFO] Google App Engine Java SDK - Starting the Development Server
-[INFO] 
+[INFO]
 [INFO] Retrieving Google App Engine Java SDK from Maven
 Downloading: http://repo.maven.apache.org/maven2/com/google/appengine/appengine-java-sdk/1.8.8/appengine-java-sdk-1.8.8.zip
 [INFO] ------------------------------------------------------------------------
@@ -62,22 +63,21 @@ Downloading: http://repo.maven.apache.org/maven2/com/google/appengine/appengine-
 [INFO] Final Memory: 17M/227M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal com.google.appengine:appengine-maven-plugin:1.8.8:devserver_start (default-cli) on project java-servlet: Could not resolve SDK artifact in Maven. Could not transfer artifact com.google.appengine:appengine-java-sdk:zip:1.8.8 from/to central (http://repo.maven.apache.org/maven2): Failed to transfer file: http://repo.maven.apache.org/maven2/com/google/appengine/appengine-java-sdk/1.8.8/appengine-java-sdk-1.8.8.zip. Return code is: 503 , ReasonPhrase:backend read error. -> [Help 1]
-[ERROR] 
+[ERROR]
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
+[ERROR]
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
 ```
 
 This was unusual. So I tried again. Its maven central server not an "under-the-desk-server". But same no change. I tried to download zip manually, just to be sure that artifact is indeed there. Damn it! I got same error, just a little more fancy looking though!
 
-{% image clear center fancybox  gae-sdk-mave-503-error.png "Google App Engine : Maven SDK Download Error"%}
-
+![type-banner](gae-sdk-mave-503-error.png "Google App Engine : Maven SDK Download Error")
 
 In directory index ([here](http://repo.maven.apache.org/maven2/com/google/appengine/appengine-java-sdk/1.8.8)), I saw that this file was a large (150+MB). So, now what? I did deploy the application after testing on Tomcat 7. I used simple appcfg.sh command.
 
-``` shell "Temporary Solution"
+```shell "Temporary Solution"
 mvn tomcat7:run
 ...
 ...
@@ -94,7 +94,7 @@ After googling, reading, googling, reading and googling, I stumbled upon an [old
 
 Install SDK zip via following command.
 
-``` shell 
+```shell
 mvn install:install-file \
   -Dfile=appengine-java-sdk-1.8.8.zip \
   -DgroupId=com.google.appengine \
@@ -106,9 +106,9 @@ mvn install:install-file \
 
 And, an optional JAR install can be done via:
 
-``` shell 
+```shell
 mvn install:install-file \
-  -Dfile=appengine-java-sdk-1.8.8/lib/appengine-tools-api.jar 
+  -Dfile=appengine-java-sdk-1.8.8/lib/appengine-tools-api.jar
   -DgroupId=com.google \
   -DartifactId=appengine-tools \
   -Dversion=1.8.8 \
