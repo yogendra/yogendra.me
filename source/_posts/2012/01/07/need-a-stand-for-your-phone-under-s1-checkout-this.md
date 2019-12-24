@@ -18,10 +18,10 @@ I know most of the phones these days come with docking stands. I personally have
 
 But suddenly today fiddling with a plugkey on my desk I put my phone on a it and bang! I got a new stand.
 
-{% asset_img plugkey-stand-plugkey1.jpg "Plugkey Stand: Plug key" %}
-{% asset_img plugkey-stand-iphone-horizontal1.jpg "Plugkey Stand: iPhone Horizontal" %}
-{% asset_img plugkey-stand-iphone-vertical1.jpg "Plugkey Stand: iPhone Vertical" %}
-{% asset_img plugkey-stand-sgs2-horizontal1.jpg "Plugkey Stand: GSII Horizontal" %}
-{% asset_img plugkey-stand-sgs2-vertical1.jpg "Plugkey Stand: GSII Vertical" %}
+![type-banner](plugkey-stand-plugkey1.jpg "Plugkey Stand: Plug key")
+![type-banner](plugkey-stand-iphone-horizontal1.jpg "Plugkey Stand: iPhone Horizontal")
+![type-banner](plugkey-stand-iphone-vertical1.jpg "Plugkey Stand: iPhone Vertical")
+![type-banner](plugkey-stand-sgs2-horizontal1.jpg "Plugkey Stand: GSII Horizontal")
+![type-banner](plugkey-stand-sgs2-vertical1.jpg "Plugkey Stand: GSII Vertical")
 
 Good thing is, you can get very creative and cover it with some velvet or paper. Also, you could get some other color and semi-transparent ones.
