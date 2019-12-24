@@ -17,7 +17,7 @@ I am embarking on this new journey to use [Static Site Generator](https://www.st
 
 <!--more-->
 
-![type-icon-right][html-js-css.png]
+![type-icon-right][html-js-css]
 
 So far, I have managed to setup:
 
@@ -154,4 +154,4 @@ deploy:
 
 That's it! Don't forget to checkin your changes.
 
-[html-js-css.png]: https://goo.gl/EzDiVM
+[html-js-css]: migration-mania/html-js-css.png
