@@ -1,15 +1,18 @@
 ---
 title: SIII Advantage
-id: 129
 categories:
   - Technology
 date: 2012-09-25 00:43:57
 tags:
 thumbnailImage: siii-icon.png
 ---
-With local telcos slimming data bundle with phone plans and charging extra S$2+ /gb, having radio on phone is great. Saves me 50megs a day. Or 1.5 gb a month.
+
+With local telcos slimming data bundle with phone plans and charging extra S\$2+ /gb, having radio on phone is great. Saves me 50megs a day. Or 1.5 gb a month.
+
 <!--more-->
-{% asset_img wpid-galaxy3b_2210472b1.jpg "Samsung Galaxy SIII" %}
+
+![type-banner](wpid-galaxy3b_2210472b1.jpg "Samsung Galaxy SIII")
+
 Widgets are great for quick updates glances, phone controls, etc.
 
 Big screen is great for reading pages.
