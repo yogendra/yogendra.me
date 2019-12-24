@@ -10,6 +10,9 @@ tags:
   - celebration
 thumbnailImage: wpid-03169115.jpg
 ---
-Colours of JOY - Best Moments in life......  Just Happen!
+
+Colours of JOY - Best Moments in life...... Just Happen!
+
 <!--more-->
-{% image clear center "wpid-03169115.jpg" "Colours of JOY - Best Moments in life......  Just Happen!" %}
+
+![type-banner]("wpid-03169115.jpg" "Colours of JOY - Best Moments in life......  Just Happen!")
