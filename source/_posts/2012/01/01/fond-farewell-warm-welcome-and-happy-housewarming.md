@@ -1,5 +1,5 @@
 ---
-title: 'Fond Farewell, Warm Welcome and Happy Housewarming'
+title: "Fond Farewell, Warm Welcome and Happy Housewarming"
 id: 15
 categories:
   - Personal
@@ -8,9 +8,12 @@ tags:
   - greeting
 thumbnailImage: old-new.jpg
 ---
+
 Its that time of the year when everyone looks back at the year gone by and look forward to the new year, in a new spirit. I too decided that I would make some changes and new commitments.
+
 <!--more-->
-{% image center old-new.jpg "Old and New" %}
+
+![type-banner](old-new.jpg "old and new")
 
 Over the course of this year I have invested time and money to amass some web assets, but never had enough time and inclination to put them to good use. I have had a stale blog before thi with an average of 3 posts per year (duh). Apart from that, there is always a fear of starting flame wars, misquoting, etc. So, its only apt to get started now.
 
