@@ -10,9 +10,11 @@ id: 340
 categories:
   - Project
 date: 2016-02-05 23:03:42
-thumbnailImage: https://goo.gl/cAHzYe
+thumbnailImage: docker-vmware-vagrant.png
 ---
 
 Docker VMWare is a base box with all goodness. See full information on [Github](https://github.com/yogendra/docker-vmware)
+
 <!--more-->
-{% img figure center https://goo.gl/cAHzYe "Docker + VMWare + Vagrant" %}
+
+[![](vagrant-docker-basebox-for-vmware-vagrant/docker-vmware-vagrant.png "Docker + VMWare + Vagrant")](vagrant-docker-basebox-for-vmware-vagrant/docker-vmware-vagrant.png)
