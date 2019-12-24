@@ -8,11 +8,14 @@ date: 2013-01-05 16:54:11
 tags:
 thumbnailImage: india-flag.png
 ---
+
 Map of India, drawn form C Code.
+
 <!--excerpt-->
+
 Going through social networks, I stumbled upon this code. It didn't make much sense to me, except for the fact that there were 2 loops doing something with a large string. But when I compiled it (with a tiny modification), it gave a great result. Here's code and result.
 
-``` c
+```c
 
 // File: india.c
 // India by C
@@ -37,6 +40,6 @@ int  main()
 
 ```
 
-{% image clear center india-by-c.png "India by C - by an Indian Programmer" %}
+![type-banner](india-by-c.png "India by C - by an Indian Programmer")
 
 _Credits_ : [Amit Adate](http://www.facebook.com/amit.adate)
