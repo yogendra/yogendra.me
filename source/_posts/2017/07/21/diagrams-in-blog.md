@@ -3,13 +3,13 @@ title: "Diagrams In Blog"
 date: 2017-07-21 17:34:12
 draft: false
 categories:
-- Technology
+  - Technology
 tags:
-- web
-- blogging
+  - web
+  - blogging
 alias:
-- 2017/07/21/diagrams-in-hugo.html
-- 2017/07/21/diagrams-in-blog.html
+  - 2017/07/21/diagrams-in-hugo.html
+  - 2017/07/21/diagrams-in-blog.html
 
 thumbnailImage: https://goo.gl/gtJUDg
 ---
@@ -50,6 +50,6 @@ generates plantuml files and svg locally. So overall page rendering is fast. Dow
 working locally. I have created a working Docker image ([yogendra/blog-toolbox:latest](http://hub.docker.com/yogendra/blog-toolbox))
 to help me work around this
 
-**Upage**: Trying client side rendering
+**Update**: Trying client side rendering
 
 [uml-diagram]: https://goo.gl/gtJUDg
