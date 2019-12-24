@@ -7,19 +7,20 @@ categories:
   - Inspirational
 date: 2015-04-11 13:10:58
 tags:
-thumbnailImage: https://goo.gl/okouJ8
+thumbnailImage: vksingh.jpg
 ---
 
 In the past six months, a war for political dominance between the two sects of Muslims—Sunni and Zaidi Shia has intensified in Yemen, the Arab country in southwest Asia that has been imploding since 2011.
+
 <!--more-->
+
 Saudi Arabia has been trying to thwart the attempt by the Iran-backed Zaidi Shia group to take control of the country.
 
 In February, however, Yemeni president Abdrabbuh Mansour Hadi fled the capital Sana’a when the rebel Shia group—also known as Houthis—strengthened their presence in the city.
 
 Due to the worsening condition of the country, the Indian govt on March 31, decided to send Gen V.K. Singh, one of its senior ministers and former Chief of The Indian Army, to oversee the mission and ensure safe return of its citizens.The operation was called as ' Rahat' - which means relief in Hindi
 
-Here are a few facts about Operation Rahat, that every Indian should know about :
------------------------------------------------
+## Here are a few facts about Operation Rahat, that every Indian should know about :
 
 1. Saudi Arabia is attacking Yemen, but from the air. Their soldiers are afraid of setting foot on land fearing for their lives.
 
