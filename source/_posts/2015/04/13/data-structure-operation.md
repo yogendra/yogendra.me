@@ -6,11 +6,12 @@ id: 313
 categories:
   - Technology
   - Programming
-thumbnailImage: https://goo.gl/Lg2K69
+thumbnailImage: logo.png
 date: 2015-04-13 00:58:00
 ---
+
 I always find myself pondering about this
 
 <!-- more -->
-{% img fancybox clear center https://goo.gl/fQMqyg  "Data Structure Operations" %}
 
+[![](data-structure-operation/datastructures.png "Data Structure Operations")](data-structure-operation/datastructures.png)
