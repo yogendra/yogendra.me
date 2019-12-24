@@ -8,14 +8,18 @@ id: 362
 categories:
   - Technology
 date: 2016-11-09 22:52:49
-thumbnailImage: https://goo.gl/zNqaSE
+thumbnailImage: icon-ssh.png
 ---
 
 Good list of commands to be SSH 'Yoda'. I like the tunnels and screen the most in these. They have been so useful over the years, for development and troubleshooting.
+
 <!--more-->
+
+[![][icon]][icon]
+
 Here is a short list that I use ofter:
 
-``` bash
+```bash
 # Copy SSH public key
 $ ssh-copy-id user@host
 
@@ -31,6 +35,8 @@ $ ssh -fX <user>@<host> <program>
 $ ssh -NR 0.0.0.0:2222:127.0.0.1:22 user@jump.host.com
 
 ```
+
 Click to [Original Post][30-ssh-shenanigans]
 
+[icon]: top-30-ssh-shenanigans/icon-ssh.png "SSH Shenanigans"
 [30-ssh-shenanigans]: https://www.blackmoreops.com/2016/11/08/top-30-ssh-shenanigans
