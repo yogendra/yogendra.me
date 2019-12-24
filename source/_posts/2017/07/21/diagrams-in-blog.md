@@ -11,7 +11,7 @@ alias:
   - 2017/07/21/diagrams-in-hugo.html
   - 2017/07/21/diagrams-in-blog.html
 
-thumbnailImage: https://goo.gl/gtJUDg
+thumbnailImage: uml.png
 ---
 
 I use a text to diagram tool called [PlantUML](http://plantuml.org). It's perfect!
@@ -52,4 +52,4 @@ to help me work around this
 
 **Update**: Trying client side rendering
 
-[uml-diagram]: https://goo.gl/gtJUDg
+[uml-diagram]: diagrams-in-blog/uml.png
