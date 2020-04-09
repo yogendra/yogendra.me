@@ -21,9 +21,9 @@ I am embarking on this new journey to use [Static Site Generator](https://www.st
 
 So far, I have managed to setup:
 
-- [Hugo](http://gohugo.io) base project
-- [GitHub repository](http://www.github.com/yogendra/yogendra.me)
-- [Travis CI](http://travis-ci.org/yogendra/yogendra.me) based build and deploy
+- [Hugo](https://gohugo.io) base project
+- [GitHub repository](https://www.github.com/yogendra/yogendra.me)
+- [Travis CI](https://travis-ci.org/yogendra/yogendra.me) based build and deploy
 
 I have a shared hosting service (for many years now) so I want to use that to host my site. This added some (small) challenges in my journey. I will share my experience, so far and in future, in this post. One thing that I really like is how natural I find this. After all I am a _Programmer_.
 

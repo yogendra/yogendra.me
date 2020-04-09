@@ -18,13 +18,13 @@ date: 2012-01-08 18:15:50
 thumbnailImage: uh-oh.jpg
 ---
 
-I have been suffering with login issues on [UOB](http://www.uob.com.sg/personal/index.html) internet banking site for as long as I can remember. I had to use Windows on a virtual machine to always login on UOB internet banking site.
+I have been suffering with login issues on [UOB](https://www.uob.com.sg/personal/index.html) internet banking site for as long as I can remember. I had to use Windows on a virtual machine to always login on UOB internet banking site.
 
 <!--more-->
 
 ![type-banner](UOB-ERROR.png "Error Message on Login Page in Chrome")
 
-I checked java installation and its all in top shape. I knew that its some crappy javascript coding that is causing it to fail to load (or merely reporting it as "failed to load"). Surprisingly site got loaded perfectly on Firefox and Opera on OS X Lion. Puh! After searching internet for possible issue I ran into a chromium issue report [40364](http://code.google.com/p/chromium/issues/detail?id=40364). That made me wear my developer hat.
+I checked java installation and its all in top shape. I knew that its some crappy javascript coding that is causing it to fail to load (or merely reporting it as "failed to load"). Surprisingly site got loaded perfectly on Firefox and Opera on OS X Lion. Puh! After searching internet for possible issue I ran into a chromium issue report [40364](https://code.google.com/p/chromium/issues/detail?id=40364). That made me wear my developer hat.
 
 I started looking up for the error message all over the javascript and html code. I started by stepping through code in the "Developer Tools" in chrome. Main culprit here was initApplet() method in pib_login.js.
 

@@ -6,6 +6,7 @@ tags:
   - appengine
   - java
   - maven
+  - FixMe
 id: 244
 date: 2014-01-04 02:23:58
 thumbnailImage: maven.png
@@ -75,7 +76,7 @@ This was unusual. So I tried again. Its maven central server not an "under-the-d
 
 ![type-banner](gae-sdk-mave-503-error.png "Google App Engine : Maven SDK Download Error")
 
-In directory index ([here](http://repo.maven.apache.org/maven2/com/google/appengine/appengine-java-sdk/1.8.8)), I saw that this file was a large (150+MB). So, now what? I did deploy the application after testing on Tomcat 7. I used simple appcfg.sh command.
+In directory index ([here](https://repo.maven.apache.org/maven2/com/google/appengine/appengine-java-sdk/1.8.8)), I saw that this file was a large (150+MB). So, now what? I did deploy the application after testing on Tomcat 7. I used simple appcfg.sh command.
 
 ```shell "Temporary Solution"
 mvn tomcat7:run
@@ -88,7 +89,7 @@ But, this was not a "cool" way. Maven is my project management tool, and I shoul
 
 ## Accident to Revival
 
-After googling, reading, googling, reading and googling, I stumbled upon an [old blog](http://shal.in/post/285908979/google-app-engine-and-maven) that added 1.2 version of SDK to maven using `install:install-file` goal. Eureka! Why not do this with SDK zip? Thats it. Here are the commands
+After googling, reading, googling, reading and googling, I stumbled upon an [old blog](https://shal.in/post/285908979/google-app-engine-and-maven) that added 1.2 version of SDK to maven using `install:install-file` goal. Eureka! Why not do this with SDK zip? Thats it. Here are the commands
 
 ## Solution
 
@@ -140,5 +141,5 @@ mvn install:install-file \
   -DgeneratePom=true
 ```
 
-- Project :   [Source](http://github.com/yogendra/java-servlet) | [Live](http://java-servlet.yogendra.me)
+- Project :   [Source](https://github.com/yogendra/java-servlet) | [Live](https://java-servlet.yogendra.me)
 - Google App Engine: [Maven](https://developers.google.com/appengine/docs/java/tools/maven) | [Dowloads](https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Java)

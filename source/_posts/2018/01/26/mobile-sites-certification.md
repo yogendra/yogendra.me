@@ -28,7 +28,7 @@ Course and certifications are **FREE** and available online. [GDG-SG][gdg-sg-hom
 [pwd]: https://developers.google.com/web/progressive-web-apps/
 [amp]: https://www.ampproject.org/
 [devtools]: https://developer.chrome.com/devtools
-[gdg-sg-home]: http://www.gdg-sg.org/
+[gdg-sg-home]: https://www.gdg-sg.org/
 [gdg-sg-fb]: https://www.facebook.com/gdgsgorg
 [gdg-sg-peatix]: https://gdg-singapore.peatix.com/view
 [certificate]: certificate.png

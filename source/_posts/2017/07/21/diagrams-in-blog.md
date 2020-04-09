@@ -14,7 +14,7 @@ alias:
 thumbnailImage: uml.png
 ---
 
-I use a text to diagram tool called [PlantUML](http://plantuml.org). It's perfect!
+I use a text to diagram tool called [PlantUML](https://plantuml.com). It's perfect!
 Now, I want to use it with my hugo site, through a short code. So, I I type a
 code like below, I should see out like as the image.
 
@@ -47,7 +47,7 @@ plugin support in processing really killed it!
 
 **Update**: I am now using a [hexo-local-plantuml](https://www.npmjs.com/package/hexo-local-plantuml) instead. This
 generates plantuml files and svg locally. So overall page rendering is fast. Downside, I need to have Java and graphviz
-working locally. I have created a working Docker image ([yogendra/blog-toolbox:latest](http://hub.docker.com/yogendra/blog-toolbox))
+working locally. I have created a working Docker image ([yogendra/blog-toolbox:latest](https://hub.docker.com/yogendra/blog-toolbox))
 to help me work around this
 
 **Update**: Trying client side rendering

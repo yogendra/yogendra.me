@@ -131,7 +131,7 @@ const puppeteer = require("puppeteer");
   await page.goto("https://news.ycombinator.com", { waitUntil: "networkidle" });
   await page.pdf({
     path: "hn.pdf",
-    format: "A4"
+    format: "A4",
   });
   await browser.close();
 })();
@@ -167,13 +167,13 @@ let scrape = async () => {
     let price = document.querySelector(".price_color").innerText;
     return {
       title,
-      price
+      price,
     };
   });
   await browser.close();
   return result;
 };
-scrape().then(value => {
+scrape().then((value) => {
   console.log(value); // Success!
 });
 ```
@@ -230,7 +230,7 @@ const SELECTOR_BOOK_IMAGE =
   "#default > div > div > div > div > section > div:nth-child(2) > ol > li:nth-child(1) > article > div.image_container > a > img";
 const puppeteer = require("puppeteer");
 
-let scrapeSite = async browser => {
+let scrapeSite = async (browser) => {
   const page = await browser.newPage();
   await page.goto("http://books.toscrape.com/");
   await page.waitFor(1000);
@@ -242,7 +242,7 @@ let scrapeSite = async browser => {
 
     return {
       title,
-      price
+      price,
     };
   });
   return result;
@@ -254,12 +254,12 @@ let scrape = async () => {
     scrapeSite(browser),
     scrapeSite(browser),
     scrapeSite(browser),
-    scrapeSite(browser)
+    scrapeSite(browser),
   ]);
   await browser.close();
   return result;
 };
-scrape().then(value => {
+scrape().then((value) => {
   console.log(value); // Success!
 });
 ```
@@ -279,13 +279,13 @@ let scrape = async () => {
   const page = await browser.newPage();
 
   await page.setRequestInterceptionEnabled(true);
-  page.on("request", r => {
+  page.on("request", (r) => {
     r.continue();
   });
-  page.on("response", r => {
+  page.on("response", (r) => {
     const url = r.url;
     if (url.endsWith("css")) {
-      r.text().then(s => {
+      r.text().then((s) => {
         console.log("// Source:" + url);
         console.log(s);
       });
@@ -317,12 +317,12 @@ Thanks to [Bharathi][27] and [Hari][28] (GDG Mangement team) for the opportunity
 [7]: https://www.chromium.org/Blink
 [8]: https://webkit.org
 [9]: https://phantomjs.org
-[10]: http://www.seleniumhq.org/
-[11]: http://www.seleniumhq.org/projects/webdriver/
+[10]: https://www.seleniumhq.org/
+[11]: https://www.seleniumhq.org/projects/webdriver/
 [12]: https://www.chromium.org
 [13]: https://www.google.com/chrome
 [14]: https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#puppeteerlaunchoptions
-[15]: http://www.gdg-sg.org/2017/10/gdg-devfest-2017.html
+[15]: https://www.gdg-sg.org/2017/10/gdg-devfest-2017.html
 [16]: https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagepdfoptions
 [17]: https://drive.google.com/open?id=0B6Mr-G5qbPLPT0JCTWl0N0w5M2s
 [18]: https://try-puppeteer.appspot.com/
@@ -331,7 +331,7 @@ Thanks to [Bharathi][27] and [Hari][28] (GDG Mangement team) for the opportunity
 [21]: https://developers.google.com/web/updates/2017/04/headless-chrome
 [22]: https://medium.com/@e_mad_ehsan/getting-started-with-puppeteer-and-chrome-headless-for-web-scrapping-6bf5979dee3e
 [23]: https://codeburst.io/a-guide-to-automating-scraping-the-web-with-javascript-chrome-puppeteer-node-js-b18efb9e9921
-[24]: http://www.gdg-sg.org
+[24]: https://www.gdg-sg.org
 [25]: https://www.facebook.com/gdgsgorg
 [26]: https://twitter.com/nmrampuria
 [27]: https://www.facebook.com/bharathi.subramanian.73

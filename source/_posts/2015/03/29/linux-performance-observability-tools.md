@@ -16,4 +16,4 @@ I use linux for all production deployments (Obviously). Here is a quick one imag
 
 Source: [linux.com][linux-com]
 
-[linux-com]: http://www.linux.com/news/enterprise/systems-management/785426-a-template-for-monitoring-linux-performance-tools-like-from-netflix
+[linux-com]: https://www.linux.com/news/enterprise/systems-management/785426-a-template-for-monitoring-linux-performance-tools-like-from-netflix

@@ -42,4 +42,4 @@ int  main()
 
 ![type-banner](india-by-c.png "India by C - by an Indian Programmer")
 
-_Credits_ : [Amit Adate](http://www.facebook.com/amit.adate)
+_Credits_ : [Amit Adate](https://www.facebook.com/amit.adate)
