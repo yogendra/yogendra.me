@@ -5,7 +5,12 @@
     "redirects": [
       {
         "source": "/jumpbox",
-        "destination": "https://gist.githubusercontent.com/yogendra/b0d368369cd0967363bd08b0e6b102bd/raw/jumpbox.sh",
+        "destination": "https://raw.githubusercontent.com/yogendra/pcf-tools/master/scripts/pcf-jumpbox-init.sh",
+        "type": 301
+      },
+      {
+        "source": "/keys",
+        "destination": "https://raw.githubusercontent.com/yogendra/dotfiles/master/config/keys",
         "type": 301
       },
       {
@@ -26,6 +31,11 @@
       {
         "source": "/k8s-profile",
         "destination": "https://gist.githubusercontent.com/yogendra/56e6d36e18f9b93236341c7e97afa56a/raw/k8s-profile.sh",
+        "type": 301
+      },
+      {
+        "source": "/dotfiles",
+        "destination": "https://raw.githubusercontent.com/yogendra/dotfiles/master/scripts/dotfiles-init.sh",
         "type": 301
       }
     ]
