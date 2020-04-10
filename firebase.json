@@ -10,7 +10,7 @@
       },
       {
         "source": "/keys",
-        "destination": "https://raw.githubusercontent.com/yogendra/dotfiles/master/config/keys",
+        "destination": "https://raw.githubusercontent.com/yogendra/dotfiles/master/root/.ssh/authorized_keys",
         "type": 301
       },
       {
