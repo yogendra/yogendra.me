@@ -3,7 +3,7 @@ title: "Security"
 meta: "false"
 actions: "false"
 comments: "false"
-layout: "page"
+alias: /security.html
 ---
 
 # security.txt
