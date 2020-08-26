@@ -1,0 +1,18 @@
+- name: Home
+  link: /
+- name: Projects
+  link: projects/
+- name: Archives
+  link: post/rich-content/
+# - name: Mus
+#   link: /categories/music/
+- name: Links
+  submenu:
+    - name: LinkedIn
+      link: https://www.linkedin.com/in/yogi
+    - name: Twitter
+      link: https://twitter.com/yogendra
+    - name: Github
+      link: https://www.github.com/yogendra
+- name: About
+  link: about/

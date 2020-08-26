@@ -1,7 +1,0 @@
-url: http://yogendra.github.io
-public_dir: .deploy_github
-
-deploy:
-  type: git
-  repo: git@github.com:yogendra/yogendra.github.io.git
-  branch: master

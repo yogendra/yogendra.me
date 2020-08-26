@@ -9,9 +9,9 @@ maintain it.
 
 Simple F-C-PR
 
-* You can **fork** this repository
-* Make **change** and test
-* Raise **pull request**
+- You can **fork** this repository
+- Make **change** and test
+- Raise **pull request**
 
 ## How to build or check changes
 
@@ -21,14 +21,14 @@ You need to have [hugo](https://gohugo.io/) and a text editor installed.
 git clone git@github.com:yogendra/yogendra.me.git
 cd yogendra.me
 git submodule update --init --recursive
-yarn start
+hugo server
 ```
 
 Navigate to [http://localhost:4000]
 
 ## FAQ
 
-### Why GIT and HEXO
+### Why GIT and HUGO
 
 To get feedback. I want feedback on my work, posts, etc. And I want to provide a
 simple/well-known way for everyone to do so.
